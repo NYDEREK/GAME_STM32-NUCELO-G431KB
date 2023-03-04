@@ -86,6 +86,10 @@ void Mob::Display_mob(){
 	ssd1306_DrawBitmap(pos_x, pos_y, bitmap, width, height, White);
 	}
 }
+void Mob::Change_position(int x,int y){
+	pos_x=x;
+	pos_y=y;
+}
 Mob::~Mob() {
 	// TODO Auto-generated destructor stub
 }

@@ -33,6 +33,8 @@ Core/Src/main.o: ../Core/Src/main.cpp ../Core/Inc/main.h \
  ../Core/Inc/ssd1306_conf.h ../Core/Inc/ssd1306_fonts.h \
  ../Core/Inc/ssd1306_tests.h ../Core/Inc/Bitmaps.h ../Core/Inc/Player.h \
  ../Core/Inc/Player.h ../Core/Inc/Map.h ../Core/Inc/Bitmaps.h \
+ ../Core/Inc/Mob.h ../Core/Inc/Spike.h ../Core/Inc/Coin.h \
+ ../Core/Inc/Objects.h ../Core/Inc/Block.h ../Core/Inc/Map.h \
  ../Core/Inc/Mob.h ../Core/Inc/Spike.h ../Core/Inc/Coin.h
 ../Core/Inc/main.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h:
@@ -78,6 +80,12 @@ Core/Src/main.o: ../Core/Src/main.cpp ../Core/Inc/main.h \
 ../Core/Inc/Player.h:
 ../Core/Inc/Map.h:
 ../Core/Inc/Bitmaps.h:
+../Core/Inc/Mob.h:
+../Core/Inc/Spike.h:
+../Core/Inc/Coin.h:
+../Core/Inc/Objects.h:
+../Core/Inc/Block.h:
+../Core/Inc/Map.h:
 ../Core/Inc/Mob.h:
 ../Core/Inc/Spike.h:
 ../Core/Inc/Coin.h:

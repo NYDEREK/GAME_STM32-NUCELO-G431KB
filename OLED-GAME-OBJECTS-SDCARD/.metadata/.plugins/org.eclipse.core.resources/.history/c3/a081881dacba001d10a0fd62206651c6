@@ -1,0 +1,114 @@
+/*
+ * Maps.c
+ *
+ *  Created on: 4 mar 2023
+ *      Author: Szymon
+ */
+//------includes-----//
+#include "Block.h"
+#include "Player.h"
+#include "Map.h"
+#include"Bitmaps.h"
+#include "Mob.h"
+#include"stdio.h"
+#include"string.h"
+#include "Spike.h"
+#include "Coin.h"
+#include <maps.h>
+
+//int for changing maps
+int Mob_1_A=83;
+int Mob_1_B=116;
+int Block_1_A=81;
+int Block_1_B=117;
+//------------------FUNCTIONS AND MAPS--------------//
+void change_map(int &cur_map,int is_map_changed){
+		if(cur_map==2){//map 2
+
+			if(is_map_changed==false){
+		    //-----POSITIONING OBJECTS-----//
+		    //--------PLAYER------------//
+		    boxi.Change_position(12, 0);
+		    //--------BLOCKS------------//
+		  	  B[0].Change_position(1,20);
+		  	  B[1].Change_position(11,20);
+		  	  B[2].Change_position(21,20);
+
+		  	  B[3].Change_position(91,20);
+		  	  B[4].Change_position(101,20);
+
+		  	  B[5].Change_position(81,52);
+		  	  B[6].Change_position(91,52);
+		  	  B[8].Change_position(101,52);
+		  	  B[9].Change_position(111,52);
+
+		  	  B[7].Change_position(70,20);
+		  	  Block_1_A=31;
+		  	  Block_1_B=81;
+             //--------MOBS----------------//
+              m1.Change_position(91, 44);
+              m1.is_mob_alive=true;
+              Mob_1_A=90;
+			  Mob_1_B=120;
+		  	 //--------SPIKES--------------//
+		  	  S[0].Change_position(2, 14);
+		  	  S[1].Change_position(7, 14);
+		  	  S[2].Change_position(81, 26);
+		  	  S[3].Change_position(86, 26);
+		  	  S[4].Change_position(122, 16);
+		  	  S[5].Change_position(122, 48);
+		  	  //--------COIN--------------/
+		  	  c1.Change_position(82,44);
+		  	  c1.is_coin_alive=true;
+		  	  cur_map++;
+
+			 }
+
+		}
+		if(cur_map==4){// map 3
+
+		if(is_map_changed==false){
+		//-----POSITIONING OBJECTS-----//
+		//--------PLAYER------------//
+	    boxi.Change_position(2, 0);
+		//--------BLOCKS------------//
+		B[0].Change_position(1,20);
+
+		B[1].Change_position(26,20);
+
+	    B[2].Change_position(31,58);
+ 	    B[3].Change_position(56,58);
+
+	    B[4].Change_position(86,58);
+	    B[5].Change_position(96,58);
+	    B[6].Change_position(106,58);
+
+	    B[8].Change_position(116,58);
+
+	    B[9].Change_position(21,58);
+
+	    B[7].Change_position(70,20);
+	    Block_1_A=36;
+	    Block_1_B=96;
+        //--------MOBS----------------//
+		 m1.Change_position(91, 50);
+		 m1.is_mob_alive=true;
+		 Mob_1_A=86;
+	     Mob_1_B=126;
+         //--------SPIKES--------------//
+		 S[0].Change_position(18, 32);
+		 S[1].Change_position(40, 32);
+		 S[2].Change_position(47, 32);
+		 S[3].Change_position(54, 32);
+		 S[4].Change_position(61, 32);
+		 S[5].Change_position(96, 32);
+		//--------COIN--------------/
+		c1.Change_position(32,45);
+		c1.is_coin_alive=true;
+		cur_map++;
+
+		}
+		is_map_changed=true;
+		}
+
+	}

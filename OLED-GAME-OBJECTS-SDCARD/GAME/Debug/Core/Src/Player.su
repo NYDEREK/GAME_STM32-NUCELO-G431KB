@@ -2,5 +2,6 @@
 ../Core/Src/Player.cpp:22:6:void Player::Display_Player()	32	static
 ../Core/Src/Player.cpp:27:6:void Player::Display_Player_hearts()	24	static
 ../Core/Src/Player.cpp:44:6:void Player::generateHIT()	16	static
-../Core/Src/Player.cpp:50:1:Player::~Player()	16	static
-../Core/Src/Player.cpp:50:1:virtual Player::~Player()	16	static
+../Core/Src/Player.cpp:50:6:void Player::Change_position(int, int)	24	static
+../Core/Src/Player.cpp:54:1:Player::~Player()	16	static
+../Core/Src/Player.cpp:54:1:virtual Player::~Player()	16	static

@@ -1,7 +1,7 @@
 ../Core/Src/Coin.cpp:18:1:Coin::Coin(int, int, int, int, const unsigned char*, int)	24	static
-../Core/Src/Coin.cpp:28:6:void Coin::Check(Player&)	16	static
-../Core/Src/Coin.cpp:50:6:void Coin::generateHIT()	16	static
-../Core/Src/Coin.cpp:57:6:void Coin::Display_Coin()	32	static
-../Core/Src/Coin.cpp:62:6:void Coin::Change_position(int, int)	24	static
-../Core/Src/Coin.cpp:66:1:Coin::~Coin()	16	static
-../Core/Src/Coin.cpp:66:1:virtual Coin::~Coin()	16	static
+../Core/Src/Coin.cpp:28:6:void Coin::Check(Player&, int&)	24	static
+../Core/Src/Coin.cpp:53:6:void Coin::generateHIT()	16	static
+../Core/Src/Coin.cpp:60:6:void Coin::Display_Coin()	32	static
+../Core/Src/Coin.cpp:65:6:void Coin::Change_position(int, int)	24	static
+../Core/Src/Coin.cpp:69:1:Coin::~Coin()	16	static
+../Core/Src/Coin.cpp:69:1:virtual Coin::~Coin()	16	static

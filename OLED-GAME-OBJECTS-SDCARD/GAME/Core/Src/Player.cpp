@@ -47,6 +47,10 @@ void Player::generateHIT(){ //generating hit box
 	THIT=pos_y;
 	BHIT=pos_y+height;
 }
+void Player::Change_position(int x,int y){
+	pos_x=x;
+	pos_y=y;
+}
 Player::~Player() {
 	// TODO Auto-generated destructor stub
 }

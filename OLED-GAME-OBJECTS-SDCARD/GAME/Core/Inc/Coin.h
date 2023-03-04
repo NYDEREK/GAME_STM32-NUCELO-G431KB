@@ -21,7 +21,7 @@ int LHIT,RHIT,THIT,BHIT;   /* this is the hit box of our coin*/
 const unsigned char* bitmap;
 
 Coin(int x=0,int y=0,int w=6,int h=6,const unsigned char* b=Bitmap_coin,int icl=1);
-void Check(Player &player);
+void Check(Player &player,int &map);
 void generateHIT();
 void Display_Coin();
 void Change_position(int x,int y);

@@ -1,0 +1,13 @@
+/*
+ * Current_Map.h
+ *
+ *  Created on: 4 mar 2023
+ *      Author: Szymon
+ */
+
+#ifndef INC_CURRENT_MAP_H_
+#define INC_CURRENT_MAP_H_
+#include"Objects.h"
+void change_map(int &cur_map,int &is_map_changed,int &Block_1_A,int &Block_1_B,int &Mob_1_A,int &Mob_1_B);
+
+#endif /* INC_CURRENT_MAP_H_ */

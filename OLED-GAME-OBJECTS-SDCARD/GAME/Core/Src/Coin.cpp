@@ -25,22 +25,25 @@ Coin::Coin(int x,int y,int w,int h,const unsigned char* b,int icl){
 
 }
 
-void Coin::Check(Player &player){//checking if player(boxi) grab this coin
+void Coin::Check(Player &player,int &map){//checking if player(boxi) grab this coin
 if(is_coin_alive==true){
 	player.generateHIT();
 	generateHIT();
 	if((player.RHIT>LHIT)&&(player.LHIT<RHIT)&&(player.BHIT==THIT)){
 	    player.Player_coins++;
+	    map++;
 	   is_coin_alive=false;
 	}
 
 	if((player.RHIT>=LHIT)&&(((player.THIT>=THIT)&&(player.THIT<=BHIT))||((player.BHIT<=BHIT)&&(player.BHIT>THIT)))&&(player.RHIT<RHIT)){//if player hit left side of coin
 	    player.Player_coins++;
+	    map++;
 	    is_coin_alive=false;
 	}
 
 	if((player.LHIT<=RHIT)&&(((player.THIT>=THIT)&&(player.THIT<=BHIT))||((player.BHIT<=BHIT)&&(player.BHIT>THIT)))&&(player.LHIT>LHIT)){// if player hit the right side of coin
 	    player.Player_coins++;
+	    map++;
 	    is_coin_alive=false;
 
 	 }

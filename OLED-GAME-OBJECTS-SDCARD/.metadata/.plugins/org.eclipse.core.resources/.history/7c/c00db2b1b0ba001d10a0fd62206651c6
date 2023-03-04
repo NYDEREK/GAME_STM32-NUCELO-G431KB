@@ -1,0 +1,24 @@
+/*
+ * Maps.h
+ *
+ *  Created on: 4 mar 2023
+ *      Author: Szymon
+ */
+
+#ifndef INC_MAPS_H_
+#define INC_MAPS_H_
+//------includes-----//
+#include "Block.h"
+#include "Player.h"
+#include "Map.h"
+#include"Bitmaps.h"
+#include "Mob.h"
+#include"stdio.h"
+#include"string.h"
+#include "Spike.h"
+#include "Coin.h"
+
+//--------FUNCTIONS----------//
+
+
+#endif /* INC_MAPS_H_ */

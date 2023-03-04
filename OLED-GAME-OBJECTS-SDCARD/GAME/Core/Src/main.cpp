@@ -33,6 +33,7 @@
 #include"string.h"
 #include "Spike.h"
 #include "Coin.h"
+#include"Objects.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -53,32 +54,22 @@
 
 /* USER CODE BEGIN PV */
 
- // creating a map//
-Map map1(Bitmap_map);
-
-// creating the player//
-Player boxi(10,4,8,8);       //there we are creating our map adding player ,blocks, mobs and spikes
-
-//creating blocks//
-Block B[10];
-
-//creating Mobs//
-Mob m1(95,54);
-
-//creating spikes//
-Spike S[6];
-
-//creating coins
-Coin c1(119,36);
 
 //--------GAME INTS------------//
 //int for map
+int is_map_changed=0;
+int current_map=1;
 int ground_level=62;
 //ints for Jump
 int Jump_height;
 
 //ints for gravitation
 int barrier;
+//int for changing maps
+int Mob_1_A=83;
+int Mob_1_B=116;
+int Block_1_A=81;
+int Block_1_B=117;
 
 
 //defines
@@ -94,10 +85,82 @@ void Gravitation(Player &player,int ground_level,int &barrier);
 void Check_buttons(Player &player,int barrier);
 void Game(Player player,int &barrier,int &Jump_height);
 void Display_Over_Screen();
+void change_map(int &cur_map,int &is_map_changed,int &Block_1_A,int &Block_1_B,int &Mob_1_A,int &Mob_1_B);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+void change_map(int &cur_map,int &is_map_changed,int &Block_1_A,int &Block_1_B,int &Mob_1_A,int &Mob_1_B){//maps~
+if(cur_map==2){//map 2
+//-----POSITIONING OBJECTS-----//
+//--------PLAYER------------//
+boxi.Change_position(12, 0);
+//--------BLOCKS------------//
+B[0].Change_position(1,20);
+B[1].Change_position(11,20);
+B[2].Change_position(21,20);
+B[3].Change_position(91,20);
+B[4].Change_position(101,20);
+B[5].Change_position(81,52);
+B[6].Change_position(91,52);
+B[8].Change_position(101,52);
+B[9].Change_position(111,52);
+B[7].Change_position(70,20);
+Block_1_A=31;
+Block_1_B=81;
+//--------MOBS----------------//
+m1.Change_position(91, 44);
+m1.is_mob_alive=true;
+Mob_1_A=90;
+Mob_1_B=120;
+//--------SPIKES--------------//
+S[0].Change_position(2, 14);
+S[1].Change_position(7, 14);
+S[2].Change_position(81, 26);
+S[3].Change_position(86, 26);
+S[4].Change_position(122, 16);
+S[5].Change_position(122, 48);
+//--------COIN--------------/
+c1.Change_position(82,44);
+c1.is_coin_alive=true;
+cur_map++;
+}
+if(cur_map==4){// map 3
+//-----POSITIONING OBJECTS-----//
+//--------PLAYER------------//
+boxi.Change_position(2, 0);
+//--------BLOCKS------------//
+B[0].Change_position(1,20);
+B[1].Change_position(26,20);
+B[2].Change_position(31,58);
+B[3].Change_position(56,58);
+B[4].Change_position(86,58);
+B[5].Change_position(96,58);
+B[6].Change_position(106,58);
+B[8].Change_position(116,58);
+B[9].Change_position(21,58);
+B[7].Change_position(70,20);
+Block_1_A=36;
+Block_1_B=96;
+//--------MOBS----------------//
+m1.Change_position(91, 50);
+m1.is_mob_alive=true;
+Mob_1_A=86;
+Mob_1_B=126;
+//--------SPIKES--------------//
+S[0].Change_position(18, 32);
+S[1].Change_position(40, 32);
+S[2].Change_position(47, 32);
+S[3].Change_position(54, 32);
+S[4].Change_position(61, 32);
+S[5].Change_position(96, 32);
+//--------COIN--------------/
+c1.Change_position(32,45);
+c1.is_coin_alive=true;
+cur_map++;
+ }
+}
+
 	void Jump(Player &player,int &jump_height,int &barrier){
 
 	 if((jump_height>0)&&(barrier==true))
@@ -121,6 +184,7 @@ void Display_Over_Screen();
 
 	 if(player.BHIT>=ground_level){
 		barrier=true;// if player hit the ground
+		player.Player_live--;
 	 }
 
 	if(barrier==false){ // if player is in free air we are falling fastest
@@ -182,13 +246,13 @@ void Display_Over_Screen();
 		  ssd1306_UpdateScreen();
 
 		  //----------MOVING BLOCKS------------------//
-		  B[7].Move_Block(81, 117, barrier,boxi);
+		  B[7].Move_Block(Block_1_A, Block_1_B, barrier,boxi);
 
 		  //----------MOVING MOBS-------------------//
-		  m1.Move_mob(83, 116);
+		  m1.Move_mob(Mob_1_A,Mob_1_B);
 
 		  //--------CHECKING BARRIERS----------------//
-		  c1.Check(boxi);
+		  c1.Check(boxi,current_map);
 		  m1.check(boxi);
 		  for(int i=0; i<=5; i++){//checking spikes
 		  	 S[i].Check(barrier, boxi);
@@ -207,6 +271,8 @@ void Display_Over_Screen();
 
 	      //----------JUMPING FUNCTION--------------//
 	      Jump(boxi,Jump_height,barrier);
+	      //-----------CHANGE MAP FUNCTION----------//
+	      change_map(current_map,is_map_changed,Block_1_A,Block_1_B,Mob_1_A,Mob_1_B);
 
 		  //-----------LED TEST--------------//
 		  //HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin); //i am turning it on for tests but game will go faster without it
@@ -254,22 +320,18 @@ int main(void)
   	  //fill black the display
   	  ssd1306_Fill(Black);
   	  ssd1306_UpdateScreen();
-     //--------BLOCKS------------//          //-----POSITIONING OBJECTS-----///
+  	//-----POSITIONING OBJECTS-----//
+     //--------BLOCKS------------//
   	  B[0].Change_position(1,52);
   	  B[1].Change_position(11,52);
   	  B[2].Change_position(21,52);
-
   	  B[3].Change_position(41,42);
   	  B[4].Change_position(41,52);
-
   	  B[5].Change_position(71,42);
   	  B[6].Change_position(71,52);
-
   	  B[7].Change_position(91,42);
-
   	  B[8].Change_position(117,42);
   	  B[9].Change_position(117,52);
-
   	 //--------SPIKES--------------//
   	  S[0].Change_position(51, 56);
   	  S[1].Change_position(56, 56);
@@ -277,6 +339,7 @@ int main(void)
   	  S[3].Change_position(66, 56);
   	  S[4].Change_position(31, 56);
   	  S[5].Change_position(36, 56);
+  	  c1.Change_position(119, 36);
 
 
   /* USER CODE END 2 */

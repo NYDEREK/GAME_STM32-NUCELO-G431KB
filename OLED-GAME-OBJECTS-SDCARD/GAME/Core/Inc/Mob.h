@@ -30,6 +30,8 @@ void generateHIT(); //generates hit box
 void check(Player &player); //checking if player kill mob or mob damage player
 void Move_mob(int point_A,int point_B);//moves mob form point A to point B
 void Display_mob(); //draws mob on screen
+void Change_position(int x,int y);
+
 virtual ~Mob();
 };
 
