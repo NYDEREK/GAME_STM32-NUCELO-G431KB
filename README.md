@@ -9,7 +9,7 @@ boxi player must avoid mobs and spikes and collect coins from each map to win. T
 
 🐱‍👤CODE🐱‍👤
 
-The code is written on classes and objects, which makes adding new functions transparent and easy. There are classes (Map, Spike, Player, Block, Mob) each class except Map has functions:
+The code is written on classes and objects, which makes adding new functions transparent and easy. There are classes (Map, Spike, Player, Block, Mob,Coin) each class except Map has functions:
 
 ✨generateHIT -to create hit box objects
 
