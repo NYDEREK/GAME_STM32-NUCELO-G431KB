@@ -65,7 +65,7 @@ Block B[10];
 Mob m1(95,54);
 
 //creating spikes//
-Spike S[4];
+Spike S[6];
 
 //--------GAME INTS------------//
 //int for map
@@ -165,7 +165,7 @@ void Display_Over_Screen();
 			  B[i].Display_Block();
 		  }
 
-		  for(int i=0; i<=3; i++){//displaying spikes
+		  for(int i=0; i<=5; i++){//displaying spikes
 		      S[i].Display_Spike();
 		   }
 
@@ -184,7 +184,7 @@ void Display_Over_Screen();
 
 		  //--------CHECKING BARRIERS----------------//
 		  m1.check(boxi);
-		  for(int i=0; i<=3; i++){//checking spikes
+		  for(int i=0; i<=5; i++){//checking spikes
 		  	 S[i].Check(barrier, boxi);
 		  }
 
@@ -269,6 +269,8 @@ int main(void)
   	  S[1].Change_position(56, 56);
   	  S[2].Change_position(61, 56);
   	  S[3].Change_position(66, 56);
+  	  S[4].Change_position(31, 56);
+  	  S[5].Change_position(36, 56);
 
 
   /* USER CODE END 2 */
