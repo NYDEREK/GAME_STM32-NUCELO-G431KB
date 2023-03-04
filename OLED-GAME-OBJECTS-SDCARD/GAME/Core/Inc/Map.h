@@ -1,0 +1,24 @@
+/*
+ * Map.h
+ *
+ *  Created on: 25 lut 2023
+ *      Author: Szymon
+ */
+
+#ifndef INC_MAP_H_
+#define INC_MAP_H_
+/*--------includes------*/
+#include"ssd1306.h"
+#include"ssd1306_tests.h"
+#include"Bitmaps.h"
+class Map {
+public:
+int pos_x,pos_y,width,height;
+const unsigned char* bitmap;
+/*-------methods-----*/
+Map(const unsigned char* b=Bitmap_map ,int w=128 ,int h=64, int x=0, int y=0);
+void Display_map();//display our map
+virtual ~Map();
+};
+
+#endif /* INC_MAP_H_ */

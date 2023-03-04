@@ -1,0 +1,22 @@
+/*
+ * Mob.cpp
+ *
+ *  Created on: 2 mar 2023
+ *      Author: Szymon
+ */
+/*--------includes------*/
+#include"ssd1306.h"
+#include"ssd1306_tests.h"
+#include"Bitmaps.h"
+#include <Player.h>
+#include <Mob.h>
+
+Mob::Mob(int x=100,int y=56,Player &p,int is_al=1,int width=8,int height=8,const unsigned char* bitmap=Bitmap_mob,int moveL=1,int moveR=0){
+	// TODO Auto-generated constructor stub
+
+}
+
+Mob::~Mob() {
+	// TODO Auto-generated destructor stub
+}
+

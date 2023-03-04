@@ -1,0 +1,24 @@
+/*
+ * Block.h
+ *
+ *  Created on: 25 lut 2023
+ *      Author: Szymon
+ */
+
+#ifndef INC_BLOCK_H_
+#define INC_BLOCK_H_
+#include<iostream>
+class Block{
+public:
+int pos_x,pos_y,width,height;
+
+int LHIT,RHIT,THIT,BHIT; /* this is the hit box of our block*/
+
+//------methods------//
+void generateHIT();
+void Check(int b);
+Block(int x=0, int y=0,int w=10,int h=10);
+virtual ~Block();
+};
+
+#endif /* INC_BLOCK_H_ */

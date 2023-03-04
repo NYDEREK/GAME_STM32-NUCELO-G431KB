@@ -1,0 +1,63 @@
+/*
+ * Block.cpp
+ *
+ *  Created on: 25 lut 2023
+ *      Author: Szymon
+ */
+/*--------includes------*/
+#include"ssd1306.h"
+#include"ssd1306_tests.h"
+#include"Bitmaps.h"
+#include "Block.h"
+#include"Player.h"
+#define true 1
+#define false 0
+
+Block::Block(int x, int y,int w,int h,const unsigned char* b) {
+	pos_x=x;
+	pos_y=y;
+	width=w;
+	height=h;
+    bitmap=b;
+}
+void Block::generateHIT(){ // it generates the hit box for this block
+	LHIT=pos_x;
+	RHIT=pos_x+width;
+	THIT=pos_y;
+	BHIT=pos_y+height;
+}
+void Block::Display_Block(){
+	ssd1306_DrawBitmap(pos_x, pos_y, bitmap, width, height, White);
+
+}
+
+void Block::Check(int &barrier,int &right_barrier,int &left_barrier,Player player){ // it checks if player hit this block (int b is int barrier for gravitation function)
+
+if((player.RHIT>LHIT)&&(player.LHIT<RHIT)&&(player.BHIT==THIT)){
+barrier=1; //function turn of our gravitation so we do not fall of this block b is barrier for gravitation
+}
+else{
+//barrier=0;
+}
+
+if((player.RHIT>=LHIT)&&(player.BHIT>=BHIT)&&(player.BHIT<=THIT)){//if player hit left side of block
+  player.pos_x--;
+  player.pos_x--;
+}
+else{
+ //right_barrier=0;
+}
+
+if((player.LHIT<=RHIT)&&(player.BHIT>=BHIT)&&(player.BHIT<=THIT)){// if player hit the right side of block
+ player.pos_x++;
+ player.pos_x++;;
+
+}
+else{
+//left_barrier=0;
+}
+}
+Block::~Block() {
+	// TODO Auto-generated destructor stub
+}
+

@@ -1,0 +1,7 @@
+../Core/Src/Spike.cpp:13:1:Spike::Spike(int, int, int, int, const unsigned char*)	24	static
+../Core/Src/Spike.cpp:22:6:void Spike::generateHIT()	16	static
+../Core/Src/Spike.cpp:29:6:void Spike::Check(int&, Player&)	24	static
+../Core/Src/Spike.cpp:45:6:void Spike::Display_Spike()	32	static
+../Core/Src/Spike.cpp:48:6:void Spike::Change_position(int, int)	24	static
+../Core/Src/Spike.cpp:53:1:Spike::~Spike()	16	static
+../Core/Src/Spike.cpp:53:1:virtual Spike::~Spike()	16	static

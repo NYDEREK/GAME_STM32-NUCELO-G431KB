@@ -1,0 +1,21 @@
+/*
+ * Spike.cpp
+ *
+ *  Created on: 3 mar 2023
+ *      Author: Szymon
+ */
+#include"ssd1306.h"
+#include"ssd1306_tests.h"
+#include"Bitmaps.h"
+#include"Player.h"
+#include <Spike.h>
+
+Spike::Spike(int x,int y,int w, int h,const unsigned char* b) {
+
+
+}
+
+Spike::~Spike() {
+	// TODO Auto-generated destructor stub
+}
+

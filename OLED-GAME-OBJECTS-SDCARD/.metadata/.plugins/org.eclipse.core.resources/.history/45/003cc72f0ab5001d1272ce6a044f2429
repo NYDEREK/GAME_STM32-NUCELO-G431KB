@@ -1,0 +1,17 @@
+/*
+ * Map.h
+ *
+ *  Created on: 25 lut 2023
+ *      Author: Szymon
+ */
+
+#ifndef INC_MAP_H_
+#define INC_MAP_H_
+
+class Map {
+public:
+	Map();
+	virtual ~Map();
+};
+
+#endif /* INC_MAP_H_ */

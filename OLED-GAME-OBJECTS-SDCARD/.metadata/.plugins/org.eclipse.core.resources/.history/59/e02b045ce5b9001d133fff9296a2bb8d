@@ -1,0 +1,30 @@
+/*
+ * Spike.h
+ *
+ *  Created on: 3 mar 2023
+ *      Author: Szymon
+ */
+
+#ifndef INC_SPIKE_H_
+#define INC_SPIKE_H_
+/*--------includes------*/
+#include"ssd1306.h"
+#include"ssd1306_tests.h"
+#include"Bitmaps.h"
+#include"Player.h"
+
+class Spike {
+public:
+
+	int pos_x,pos_y,width,height;
+	int LHIT,RHIT,THIT,BHIT; /* this is the hit box of our block*/
+	const unsigned char* bitmap;
+	//------methods------//
+Spike(int x=0,int y=0,int w=5, int h=5,const unsigned char* b=Bitmap_spike);
+void generateHIT(); /* generates hit box of our spike*/
+void Display_Spike();
+void Check(Player &player);
+virtual ~Spike();
+};
+
+#endif /* INC_SPIKE_H_ */

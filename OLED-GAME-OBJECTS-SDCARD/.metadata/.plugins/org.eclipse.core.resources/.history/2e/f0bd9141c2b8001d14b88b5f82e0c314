@@ -1,0 +1,17 @@
+/*
+ * Mob.h
+ *
+ *  Created on: 2 mar 2023
+ *      Author: Szymon
+ */
+
+#ifndef INC_MOB_H_
+#define INC_MOB_H_
+
+class Mob {
+public:
+	Mob();
+	virtual ~Mob();
+};
+
+#endif /* INC_MOB_H_ */

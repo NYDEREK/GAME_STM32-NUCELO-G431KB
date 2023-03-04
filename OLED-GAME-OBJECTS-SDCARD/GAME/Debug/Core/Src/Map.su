@@ -1,0 +1,4 @@
+../Core/Src/Map.cpp:13:1:Map::Map(const unsigned char*, int, int, int, int)	24	static
+../Core/Src/Map.cpp:20:6:void Map::Display_map()	32	static
+../Core/Src/Map.cpp:25:1:Map::~Map()	16	static
+../Core/Src/Map.cpp:25:1:virtual Map::~Map()	16	static

@@ -1,0 +1,18 @@
+/*
+ * Mob.cpp
+ *
+ *  Created on: 2 mar 2023
+ *      Author: Szymon
+ */
+
+#include <Mob.h>
+
+Mob::MobMob(int x=100,int y=56,Player &p,int is_al=1,int width=8,int height=8,const unsigned char* bitmap=Bitmap_mob,int moveL=1,int moveR=0){
+	// TODO Auto-generated constructor stub
+
+}
+
+Mob::~Mob() {
+	// TODO Auto-generated destructor stub
+}
+

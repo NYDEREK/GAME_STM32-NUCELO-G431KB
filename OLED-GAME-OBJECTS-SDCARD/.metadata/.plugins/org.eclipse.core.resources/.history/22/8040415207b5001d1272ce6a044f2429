@@ -1,0 +1,21 @@
+/*
+ * Player.h
+ *
+ *  Created on: 25 lut 2023
+ *      Author: Szymon
+ */
+
+#ifndef INC_PLAYER_H_
+#define INC_PLAYER_H_
+
+class Player {
+public:
+	int pos_x,pos_y,width,height;
+	int LHIT,RHIT,THIT,BHIT;// is for checking if our player hit any block
+/*-------methods-----*/
+Player(int x=64,int y=56,int w=8,int h=8);
+void generateHIT();
+virtual ~Player();
+};
+
+#endif /* INC_PLAYER_H_ */

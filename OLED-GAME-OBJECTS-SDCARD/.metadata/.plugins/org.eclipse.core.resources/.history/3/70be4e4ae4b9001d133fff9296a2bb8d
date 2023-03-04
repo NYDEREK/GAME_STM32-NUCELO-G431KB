@@ -1,0 +1,17 @@
+/*
+ * Spike.h
+ *
+ *  Created on: 3 mar 2023
+ *      Author: Szymon
+ */
+
+#ifndef INC_SPIKE_H_
+#define INC_SPIKE_H_
+
+class Spike {
+public:
+	Spike();
+	virtual ~Spike();
+};
+
+#endif /* INC_SPIKE_H_ */

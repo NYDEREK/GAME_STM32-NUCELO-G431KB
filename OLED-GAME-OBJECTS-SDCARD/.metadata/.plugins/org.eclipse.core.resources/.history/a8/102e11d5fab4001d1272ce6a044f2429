@@ -1,0 +1,17 @@
+/*
+ * player.h
+ *
+ *  Created on: 25 lut 2023
+ *      Author: Szymon
+ */
+
+#ifndef INC_PLAYER_H_
+#define INC_PLAYER_H_
+
+class player {
+public:
+	player();
+	virtual ~player();
+};
+
+#endif /* INC_PLAYER_H_ */

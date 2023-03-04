@@ -1,0 +1,21 @@
+/*
+ * player.h
+ *
+ *  Created on: 25 lut 2023
+ *      Author: Szymon
+ */
+
+#ifndef INC_PLAYER_H_
+#define INC_PLAYER_H_
+
+class Player {
+public:
+int pos_x,pos_y,width,height;
+int LHIT,RHIT,THIT,BHIT;//its for checking barriers on blocks
+/*-------methods------*/
+Player();
+void generateHIT();
+virtual ~Player();
+};
+
+#endif /* INC_PLAYER_H_ */

@@ -1,0 +1,8 @@
+../Core/Src/Block.cpp:16:1:Block::Block(int, int, int, int, const unsigned char*, int, int)	24	static
+../Core/Src/Block.cpp:25:6:void Block::generateHIT()	16	static
+../Core/Src/Block.cpp:31:6:void Block::Display_Block()	32	static
+../Core/Src/Block.cpp:36:6:void Block::Check(int&, Player&)	24	static
+../Core/Src/Block.cpp:63:6:void Block::Move_Block(int, int, int&, Player&)	24	static
+../Core/Src/Block.cpp:92:6:void Block::Change_position(int, int)	24	static
+../Core/Src/Block.cpp:96:1:Block::~Block()	16	static
+../Core/Src/Block.cpp:96:1:virtual Block::~Block()	16	static

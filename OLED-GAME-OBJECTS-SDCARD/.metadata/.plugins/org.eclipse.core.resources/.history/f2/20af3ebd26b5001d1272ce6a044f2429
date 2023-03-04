@@ -1,0 +1,21 @@
+/*
+ * Game-display.h
+ *
+ *  Created on: Feb 25, 2023
+ *      Author: Szymon
+ */
+
+#ifndef INC_GAME_DISPLAY_H_
+#define INC_GAME_DISPLAY_H_
+/*--------includes------*/
+#include"ssd1306.h"
+#include"ssd1306_tests.h"
+#include"Bitmaps.h"
+#include "Block.h"
+#include"Map.h"
+#include"Player.h"
+//---functions---//
+void Display_game(void);
+
+
+#endif /* INC_GAME_DISPLAY_H_ */

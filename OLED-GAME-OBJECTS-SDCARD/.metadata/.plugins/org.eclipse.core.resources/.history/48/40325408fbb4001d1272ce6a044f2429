@@ -1,0 +1,21 @@
+/*
+ * player.cpp
+ *
+ *  Created on: 25 lut 2023
+ *      Author: Szymon
+ */
+
+#include <player.h>
+
+Player::player() {
+	// TODO Auto-generated constructor stub
+
+}
+Player::generateHIT(){
+
+}
+
+Player::~player() {
+	// TODO Auto-generated destructor stub
+}
+

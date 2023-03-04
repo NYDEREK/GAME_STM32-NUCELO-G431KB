@@ -1,0 +1,25 @@
+/*
+ * Game-display.cpp
+ *
+ *  Created on: Feb 25, 2023
+ *      Author: Szymon
+ */
+
+/*--------includes------*/
+#include"ssd1306.h"
+#include"ssd1306_tests.h"
+#include"Bitmaps.h"
+#include "Block.h"
+#include"Map.h"
+#include"Player.h"
+#include"Game-display.h"
+//=-=-=-=-FUNCTIONS-=-=-=-=-=-//
+void Display_game(){
+	 //display all objects//
+		  ssd1306_Fill(Black);
+		  map1.Display_map();
+		  boxi.Display_Player();
+		  b1.Display_Block();
+		  //updating the screen//
+		  ssd1306_UpdateScreen();
+}

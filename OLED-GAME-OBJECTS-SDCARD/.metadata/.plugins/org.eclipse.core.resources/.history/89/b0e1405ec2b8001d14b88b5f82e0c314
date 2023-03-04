@@ -1,0 +1,18 @@
+/*
+ * Mob.cpp
+ *
+ *  Created on: 2 mar 2023
+ *      Author: Szymon
+ */
+
+#include <Mob.h>
+
+Mob::Mob() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Mob::~Mob() {
+	// TODO Auto-generated destructor stub
+}
+

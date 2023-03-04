@@ -1,0 +1,15 @@
+/*
+ * Class-game.c
+ *
+ *  Created on: 25 lut 2023
+ *      Author: Szymon
+ */
+
+/*-----------includes------------*/
+#include"Class-game.h"
+#include"Bitmaps.h"
+/*---------Class----------------*/
+Class Block{
+
+};
+
