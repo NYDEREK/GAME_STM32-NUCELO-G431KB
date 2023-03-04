@@ -1,4 +1,5 @@
 
+(for now not everthing its done its work in progres)
 
 Hi, this is my OLED screen game on nucleo-g431kb called "boxi game"
 
