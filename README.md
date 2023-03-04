@@ -13,7 +13,7 @@ The code is written on classes and objects, which makes adding new functions tra
 
 ✨generateHIT -to create hit box objects
 
-✨Check -if boxes/player hit him (only map and boxes don't have it)
+✨Check -if boxi/player hit him (only map and boxi don't have it)
 
 ✨Display_Block/Spike/player/map - for easy screen change in the future I want to add ILI9341 display so inside this function is ssd1306 driver function to draw bitmap on display
 
