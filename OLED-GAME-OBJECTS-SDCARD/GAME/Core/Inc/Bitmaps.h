@@ -180,4 +180,11 @@ const unsigned char Bitmap_heart [] = {
 };
 
 // Array of all bitmaps for convenience. (Total bytes used to store images in PROGMEM = 32)
+
+// 'Bitmap_coin', 6x6px
+const unsigned char Bitmap_coin [] = {
+	0x30, 0x48, 0x94, 0xa4, 0x48, 0x30
+};
+
+// Array of all bitmaps for convenience. (Total bytes used to store images in PROGMEM = 32)
 #endif /* INC_BITMAPS_H_ */

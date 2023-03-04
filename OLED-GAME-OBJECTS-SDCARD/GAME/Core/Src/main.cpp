@@ -32,6 +32,7 @@
 #include"stdio.h"
 #include"string.h"
 #include "Spike.h"
+#include "Coin.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -66,6 +67,9 @@ Mob m1(95,54);
 
 //creating spikes//
 Spike S[6];
+
+//creating coins
+Coin c1(119,36);
 
 //--------GAME INTS------------//
 //int for map
@@ -160,6 +164,7 @@ void Display_Over_Screen();
 		  ssd1306_Fill(Black);
 		  boxi.Display_Player_hearts();
 		  map1.Display_map();
+          c1.Display_Coin();
 
 		  for(int i=0; i<=9; i++){//displaying blocks
 			  B[i].Display_Block();
@@ -183,6 +188,7 @@ void Display_Over_Screen();
 		  m1.Move_mob(83, 116);
 
 		  //--------CHECKING BARRIERS----------------//
+		  c1.Check(boxi);
 		  m1.check(boxi);
 		  for(int i=0; i<=5; i++){//checking spikes
 		  	 S[i].Check(barrier, boxi);

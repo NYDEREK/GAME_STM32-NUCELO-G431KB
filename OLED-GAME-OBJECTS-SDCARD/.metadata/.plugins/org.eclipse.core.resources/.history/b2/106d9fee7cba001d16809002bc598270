@@ -1,0 +1,27 @@
+/*
+ * Coin.cpp
+ *
+ *  Created on: 4 mar 2023
+ *      Author: Szymon
+ */
+
+#include <Coin.h>
+
+Coin::Coin(int x,int y,int w,int h,const unsigned char* b){
+	pos_x=x;
+	pos_y=y;
+
+}
+
+void Coin::Check(Player &player){
+
+}
+
+void Coin::generateHIT(){
+
+}
+
+Coin::~Coin() {
+	// TODO Auto-generated destructor stub
+}
+

@@ -1,0 +1,29 @@
+/*
+ * Coin.h
+ *
+ *  Created on: 4 mar 2023
+ *      Author: Szymon
+ */
+
+#ifndef INC_COIN_H_
+#define INC_COIN_H_
+/*--------includes------*/
+#include"ssd1306.h"
+#include"ssd1306_tests.h"
+#include"Bitmaps.h"
+#include"Player.h"
+
+class Coin {
+public:
+int is_coin_alive; //if player grab the coin then coin dies
+int pos_x,pos_y,width,height;
+int LHIT,RHIT,THIT,BHIT;   /* this is the hit box of our coin*/
+const unsigned char* bitmap;
+
+Coin(int x=0,int y=0,int w=6,int h=6,const unsigned char* b=Bitmap_coin,int icl=1);
+void Check(Player &player);
+void generateHIT();
+virtual ~Coin();
+};
+
+#endif /* INC_COIN_H_ */

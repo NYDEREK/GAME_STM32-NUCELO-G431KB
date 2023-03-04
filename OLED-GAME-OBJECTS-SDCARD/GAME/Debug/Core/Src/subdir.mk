@@ -19,6 +19,7 @@ C_SRCS += \
 
 CPP_SRCS += \
 ../Core/Src/Block.cpp \
+../Core/Src/Coin.cpp \
 ../Core/Src/Map.cpp \
 ../Core/Src/Mob.cpp \
 ../Core/Src/Player.cpp \
@@ -40,6 +41,7 @@ C_DEPS += \
 
 OBJS += \
 ./Core/Src/Block.o \
+./Core/Src/Coin.o \
 ./Core/Src/Map.o \
 ./Core/Src/Mob.o \
 ./Core/Src/Player.o \
@@ -59,6 +61,7 @@ OBJS += \
 
 CPP_DEPS += \
 ./Core/Src/Block.d \
+./Core/Src/Coin.d \
 ./Core/Src/Map.d \
 ./Core/Src/Mob.d \
 ./Core/Src/Player.d \
@@ -75,7 +78,7 @@ Core/Src/%.o Core/Src/%.su: ../Core/Src/%.c Core/Src/subdir.mk
 clean: clean-Core-2f-Src
 
 clean-Core-2f-Src:
-	-$(RM) ./Core/Src/Block.d ./Core/Src/Block.o ./Core/Src/Block.su ./Core/Src/Map.d ./Core/Src/Map.o ./Core/Src/Map.su ./Core/Src/Mob.d ./Core/Src/Mob.o ./Core/Src/Mob.su ./Core/Src/Player.d ./Core/Src/Player.o ./Core/Src/Player.su ./Core/Src/Spike.d ./Core/Src/Spike.o ./Core/Src/Spike.su ./Core/Src/gpio.d ./Core/Src/gpio.o ./Core/Src/gpio.su ./Core/Src/i2c.d ./Core/Src/i2c.o ./Core/Src/i2c.su ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/ssd1306.d ./Core/Src/ssd1306.o ./Core/Src/ssd1306.su ./Core/Src/ssd1306_fonts.d ./Core/Src/ssd1306_fonts.o ./Core/Src/ssd1306_fonts.su ./Core/Src/ssd1306_tests.d ./Core/Src/ssd1306_tests.o ./Core/Src/ssd1306_tests.su ./Core/Src/stm32g4xx_hal_msp.d ./Core/Src/stm32g4xx_hal_msp.o ./Core/Src/stm32g4xx_hal_msp.su ./Core/Src/stm32g4xx_it.d ./Core/Src/stm32g4xx_it.o ./Core/Src/stm32g4xx_it.su ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32g4xx.d ./Core/Src/system_stm32g4xx.o ./Core/Src/system_stm32g4xx.su ./Core/Src/usart.d ./Core/Src/usart.o ./Core/Src/usart.su
+	-$(RM) ./Core/Src/Block.d ./Core/Src/Block.o ./Core/Src/Block.su ./Core/Src/Coin.d ./Core/Src/Coin.o ./Core/Src/Coin.su ./Core/Src/Map.d ./Core/Src/Map.o ./Core/Src/Map.su ./Core/Src/Mob.d ./Core/Src/Mob.o ./Core/Src/Mob.su ./Core/Src/Player.d ./Core/Src/Player.o ./Core/Src/Player.su ./Core/Src/Spike.d ./Core/Src/Spike.o ./Core/Src/Spike.su ./Core/Src/gpio.d ./Core/Src/gpio.o ./Core/Src/gpio.su ./Core/Src/i2c.d ./Core/Src/i2c.o ./Core/Src/i2c.su ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/ssd1306.d ./Core/Src/ssd1306.o ./Core/Src/ssd1306.su ./Core/Src/ssd1306_fonts.d ./Core/Src/ssd1306_fonts.o ./Core/Src/ssd1306_fonts.su ./Core/Src/ssd1306_tests.d ./Core/Src/ssd1306_tests.o ./Core/Src/ssd1306_tests.su ./Core/Src/stm32g4xx_hal_msp.d ./Core/Src/stm32g4xx_hal_msp.o ./Core/Src/stm32g4xx_hal_msp.su ./Core/Src/stm32g4xx_it.d ./Core/Src/stm32g4xx_it.o ./Core/Src/stm32g4xx_it.su ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32g4xx.d ./Core/Src/system_stm32g4xx.o ./Core/Src/system_stm32g4xx.su ./Core/Src/usart.d ./Core/Src/usart.o ./Core/Src/usart.su
 
 .PHONY: clean-Core-2f-Src
 

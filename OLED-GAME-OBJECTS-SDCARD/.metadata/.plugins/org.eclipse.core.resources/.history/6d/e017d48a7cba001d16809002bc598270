@@ -1,0 +1,18 @@
+/*
+ * Coin.cpp
+ *
+ *  Created on: 4 mar 2023
+ *      Author: Szymon
+ */
+
+#include <Coin.h>
+
+Coin::Coin() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Coin::~Coin() {
+	// TODO Auto-generated destructor stub
+}
+

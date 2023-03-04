@@ -13,7 +13,7 @@
 
 class Player {
 public:
-int Player_live;
+int Player_live,Player_coins;//in game values
 int pos_x,pos_y,width,height;
 int LHIT,RHIT,THIT,BHIT;// is for checking if our player hit any block
 const unsigned char* bitmap;

@@ -1,0 +1,17 @@
+/*
+ * Coin.h
+ *
+ *  Created on: 4 mar 2023
+ *      Author: Szymon
+ */
+
+#ifndef INC_COIN_H_
+#define INC_COIN_H_
+
+class Coin {
+public:
+	Coin();
+	virtual ~Coin();
+};
+
+#endif /* INC_COIN_H_ */

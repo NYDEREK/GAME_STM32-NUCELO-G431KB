@@ -1,4 +1,5 @@
 "./Core/Src/Block.o"
+"./Core/Src/Coin.o"
 "./Core/Src/Map.o"
 "./Core/Src/Mob.o"
 "./Core/Src/Player.o"

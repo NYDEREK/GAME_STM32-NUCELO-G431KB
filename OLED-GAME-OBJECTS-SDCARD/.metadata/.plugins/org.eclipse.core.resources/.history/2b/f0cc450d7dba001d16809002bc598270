@@ -1,0 +1,33 @@
+/*
+ * Coin.cpp
+ *
+ *  Created on: 4 mar 2023
+ *      Author: Szymon
+ */
+
+#include <Coin.h>
+
+Coin::Coin(int x,int y,int w,int h,const unsigned char* b,int icl){
+	pos_x=x;
+	pos_y=y;
+	width=w;
+	height=h;
+	bitmap=b;
+
+}
+
+void Coin::Check(Player &player){
+
+}
+
+void Coin::generateHIT(){
+	LHIT=pos_x;
+	RHIT=pos_x+width;
+	THIT=pos_y;
+	BHIT=pos_y+height;
+}
+
+Coin::~Coin() {
+	// TODO Auto-generated destructor stub
+}
+
