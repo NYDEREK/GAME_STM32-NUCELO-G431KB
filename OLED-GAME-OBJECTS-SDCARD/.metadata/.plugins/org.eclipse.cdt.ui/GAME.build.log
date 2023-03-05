@@ -1,10 +1,10 @@
-18:43:21 **** Incremental Build of configuration Debug for project GAME ****
+12:09:59 **** Incremental Build of configuration Debug for project GAME ****
 make -j4 all 
 arm-none-eabi-size   GAME.elf 
    text	   data	    bss	    dec	    hex	filename
-  22456	    152	   3768	  26376	   6708	GAME.elf
+  22620	    152	   3776	  26548	   67b4	GAME.elf
 Finished building: default.size.stdout
  
 
-18:43:22 Build Finished. 0 errors, 0 warnings. (took 1s.94ms)
+12:10:00 Build Finished. 0 errors, 0 warnings. (took 500ms)
 

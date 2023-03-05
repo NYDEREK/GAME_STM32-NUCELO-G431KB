@@ -85,12 +85,14 @@ void Gravitation(Player &player,int ground_level,int &barrier);
 void Check_buttons(Player &player,int barrier);
 void Game(Player player,int &barrier,int &Jump_height);
 void Display_Over_Screen();
-void change_map(int &cur_map,int &is_map_changed,int &Block_1_A,int &Block_1_B,int &Mob_1_A,int &Mob_1_B);
+void change_map(int &cur_map,int &is_map_changed,int &Block_1_A,int &Block_1_B,int &Mob_1_A,int &Mob_1_B,Coin coin);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-void change_map(int &cur_map,int &is_map_changed,int &Block_1_A,int &Block_1_B,int &Mob_1_A,int &Mob_1_B){//maps~
+void change_map(int &cur_map,int &is_map_changed,int &Block_1_A,int &Block_1_B,int &Mob_1_A,int &Mob_1_B,Coin coin){//maps~
+if(coin.is_coin_gathered==true){//if coin gathered boxi is go to the next map
+
 if(cur_map==2){//map 2
 //-----POSITIONING OBJECTS-----//
 //--------PLAYER------------//
@@ -123,9 +125,9 @@ S[5].Change_position(122, 48);
 //--------COIN--------------/
 c1.Change_position(82,44);
 c1.is_coin_alive=true;
-cur_map++;
+//cur_map++;
 }
-if(cur_map==4){// map 3
+if(cur_map==3){// map 3
 //-----POSITIONING OBJECTS-----//
 //--------PLAYER------------//
 boxi.Change_position(2, 0);
@@ -157,10 +159,10 @@ S[5].Change_position(96, 32);
 //--------COIN--------------/
 c1.Change_position(32,45);
 c1.is_coin_alive=true;
-cur_map++;
+//cur_map++;
  }
 }
-
+}
 	void Jump(Player &player,int &jump_height,int &barrier){
 
 	 if((jump_height>0)&&(barrier==true))
@@ -272,7 +274,7 @@ cur_map++;
 	      //----------JUMPING FUNCTION--------------//
 	      Jump(boxi,Jump_height,barrier);
 	      //-----------CHANGE MAP FUNCTION----------//
-	      change_map(current_map,is_map_changed,Block_1_A,Block_1_B,Mob_1_A,Mob_1_B);
+	      change_map(current_map,is_map_changed,Block_1_A,Block_1_B,Mob_1_A,Mob_1_B,c1);
 
 		  //-----------LED TEST--------------//
 		  //HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin); //i am turning it on for tests but game will go faster without it

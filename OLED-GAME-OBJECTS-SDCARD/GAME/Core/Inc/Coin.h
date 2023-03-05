@@ -15,6 +15,7 @@
 
 class Coin {
 public:
+int is_coin_gathered;
 int is_coin_alive; //if player grab the coin then coin dies
 int pos_x,pos_y,width,height;
 int LHIT,RHIT,THIT,BHIT;   /* this is the hit box of our coin*/
