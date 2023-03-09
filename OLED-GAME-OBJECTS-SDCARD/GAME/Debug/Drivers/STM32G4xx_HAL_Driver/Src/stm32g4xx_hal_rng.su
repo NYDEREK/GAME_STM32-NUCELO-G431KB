@@ -1,0 +1,12 @@
+../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rng.c:155:19:HAL_RNG_Init	16	static
+../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rng.c:219:19:HAL_RNG_DeInit	16	static
+../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rng.c:267:13:HAL_RNG_MspInit	16	static
+../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rng.c:282:13:HAL_RNG_MspDeInit	16	static
+../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rng.c:557:19:HAL_RNG_GenerateRandomNumber	24	static
+../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rng.c:615:19:HAL_RNG_GenerateRandomNumber_IT	24	static
+../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rng.c:664:6:HAL_RNG_IRQHandler	24	static
+../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rng.c:738:10:HAL_RNG_ReadLastRandomNumber	16	static
+../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rng.c:755:13:HAL_RNG_ReadyDataCallback	16	static
+../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rng.c:771:13:HAL_RNG_ErrorCallback	16	static
+../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rng.c:805:22:HAL_RNG_GetState	16	static
+../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rng.c:815:10:HAL_RNG_GetError	16	static

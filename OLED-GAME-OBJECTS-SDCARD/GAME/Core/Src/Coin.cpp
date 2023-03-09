@@ -32,21 +32,21 @@ is_coin_gathered=false;
 	generateHIT();
 	if((player.RHIT>LHIT)&&(player.LHIT<RHIT)&&(player.BHIT==THIT)){
 	    player.Player_coins++;
-	    map++;
+	    //map++;
 	   is_coin_alive=false;
 	   is_coin_gathered=true;
 	}
 
 	if((player.RHIT>=LHIT)&&(((player.THIT>=THIT)&&(player.THIT<=BHIT))||((player.BHIT<=BHIT)&&(player.BHIT>THIT)))&&(player.RHIT<RHIT)){//if player hit left side of coin
 	    player.Player_coins++;
-	    map++;
+	    //map++;
 	    is_coin_alive=false;
 	    is_coin_gathered=true;
 	}
 
 	if((player.LHIT<=RHIT)&&(((player.THIT>=THIT)&&(player.THIT<=BHIT))||((player.BHIT<=BHIT)&&(player.BHIT>THIT)))&&(player.LHIT>LHIT)){// if player hit the right side of coin
 	    player.Player_coins++;
-	    map++;
+	    //map++;
 	    is_coin_alive=false;
 	    is_coin_gathered=true;
 
