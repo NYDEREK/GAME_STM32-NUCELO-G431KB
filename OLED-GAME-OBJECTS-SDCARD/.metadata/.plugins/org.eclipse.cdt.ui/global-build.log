@@ -522,3 +522,992 @@ Finished building: default.size.stdout
  
 Finished building: GAME.list
  
+17:37:12 **** Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/Block.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/Block.d" -MT"Core/Src/Block.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Block.o"
+arm-none-eabi-g++ "../Core/Src/Coin.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/Coin.d" -MT"Core/Src/Coin.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Coin.o"
+arm-none-eabi-g++ "../Core/Src/Map.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/Map.d" -MT"Core/Src/Map.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Map.o"
+arm-none-eabi-g++ "../Core/Src/Mob.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/Mob.d" -MT"Core/Src/Mob.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Mob.o"
+arm-none-eabi-g++ "../Core/Src/Player.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/Player.d" -MT"Core/Src/Player.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Player.o"
+arm-none-eabi-g++ "../Core/Src/Spike.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/Spike.d" -MT"Core/Src/Spike.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Spike.o"
+arm-none-eabi-gcc "../Core/Src/gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/gpio.d" -MT"Core/Src/gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/gpio.o"
+arm-none-eabi-gcc "../Core/Src/i2c.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/i2c.d" -MT"Core/Src/i2c.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/i2c.o"
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/rng.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/rng.d" -MT"Core/Src/rng.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/rng.o"
+arm-none-eabi-gcc "../Core/Src/ssd1306.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ssd1306.d" -MT"Core/Src/ssd1306.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/ssd1306.o"
+arm-none-eabi-gcc "../Core/Src/ssd1306_fonts.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ssd1306_fonts.d" -MT"Core/Src/ssd1306_fonts.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/ssd1306_fonts.o"
+arm-none-eabi-gcc "../Core/Src/ssd1306_tests.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ssd1306_tests.d" -MT"Core/Src/ssd1306_tests.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/ssd1306_tests.o"
+arm-none-eabi-gcc "../Core/Src/stm32g4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32g4xx_hal_msp.d" -MT"Core/Src/stm32g4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32g4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32g4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32g4xx_it.d" -MT"Core/Src/stm32g4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32g4xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32g4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32g4xx.d" -MT"Core/Src/system_stm32g4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32g4xx.o"
+arm-none-eabi-g++ "../Core/Src/tm_stm32f4_rng.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/tm_stm32f4_rng.d" -MT"Core/Src/tm_stm32f4_rng.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/tm_stm32f4_rng.o"
+arm-none-eabi-gcc "../Core/Src/usart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/usart.d" -MT"Core/Src/usart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/usart.o"
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  23168	    148	   3780	  27096	   69d8	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+18:09:35 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.cpp: In function 'void WIN_GAME(Player*)':
+../Core/Src/main.cpp:242:9: error: request for member 'Change_position' in 'player', which is of pointer type 'Player*' (maybe you meant to use '->' ?)
+  242 |  player.Change_position(3,10);
+      |         ^~~~~~~~~~~~~~~
+../Core/Src/main.cpp:245:10: error: request for member 'pos_x' in 'player', which is of pointer type 'Player*' (maybe you meant to use '->' ?)
+  245 |   player.pos_x++;
+      |          ^~~~~
+make: *** [Core/Src/subdir.mk:80: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+18:11:47 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.cpp: In function 'void WIN_GAME(Player*)':
+../Core/Src/main.cpp:242:12: error: request for member 'Player_coins' in 'player', which is of pointer type 'Player*' (maybe you meant to use '->' ?)
+  242 |  if(player.Player_coins>4){
+      |            ^~~~~~~~~~~~
+../Core/Src/main.cpp:243:9: error: request for member 'Change_position' in 'player', which is of pointer type 'Player*' (maybe you meant to use '->' ?)
+  243 |  player.Change_position(3,10);
+      |         ^~~~~~~~~~~~~~~
+../Core/Src/main.cpp:246:10: error: request for member 'pos_x' in 'player', which is of pointer type 'Player*' (maybe you meant to use '->' ?)
+  246 |   player.pos_x++;
+      |          ^~~~~
+make: *** [Core/Src/subdir.mk:80: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+18:13:06 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.cpp: In function 'void WIN_GAME(Player*)':
+../Core/Src/main.cpp:242:12: error: request for member 'Player_coins' in 'player', which is of pointer type 'Player*' (maybe you meant to use '->' ?)
+  242 |  if(player.Player_coins>=4){
+      |            ^~~~~~~~~~~~
+../Core/Src/main.cpp:243:9: error: request for member 'Change_position' in 'player', which is of pointer type 'Player*' (maybe you meant to use '->' ?)
+  243 |  player.Change_position(3,10);
+      |         ^~~~~~~~~~~~~~~
+../Core/Src/main.cpp:246:10: error: request for member 'pos_x' in 'player', which is of pointer type 'Player*' (maybe you meant to use '->' ?)
+  246 |   player.pos_x++;
+      |          ^~~~~
+make: *** [Core/Src/subdir.mk:80: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+18:13:31 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.cpp: In function 'void WIN_GAME(Player*)':
+../Core/Src/main.cpp:242:12: error: request for member 'Player_coins' in 'player', which is of pointer type 'Player*' (maybe you meant to use '->' ?)
+  242 |  if(player.Player_coins>=4){
+      |            ^~~~~~~~~~~~
+../Core/Src/main.cpp:243:9: error: request for member 'Change_position' in 'player', which is of pointer type 'Player*' (maybe you meant to use '->' ?)
+  243 |  player.Change_position(3,10);
+      |         ^~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:80: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+18:14:04 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  23168	    148	   3780	  27096	   69d8	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+18:15:18 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  23196	    148	   3804	  27148	   6a0c	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+18:25:25 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/Block.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/Block.d" -MT"Core/Src/Block.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Block.o"
+arm-none-eabi-g++ "../Core/Src/Coin.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/Coin.d" -MT"Core/Src/Coin.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Coin.o"
+arm-none-eabi-g++ "../Core/Src/Map.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/Map.d" -MT"Core/Src/Map.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Map.o"
+arm-none-eabi-g++ "../Core/Src/Mob.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/Mob.d" -MT"Core/Src/Mob.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Mob.o"
+arm-none-eabi-g++ "../Core/Src/Player.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/Player.d" -MT"Core/Src/Player.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Player.o"
+arm-none-eabi-g++ "../Core/Src/Spike.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/Spike.d" -MT"Core/Src/Spike.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Spike.o"
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/ssd1306_tests.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ssd1306_tests.d" -MT"Core/Src/ssd1306_tests.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/ssd1306_tests.o"
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  23228	    148	   3828	  27204	   6a44	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+18:26:18 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  24256	    148	   3828	  28232	   6e48	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+18:29:11 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/Block.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/Block.d" -MT"Core/Src/Block.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Block.o"
+arm-none-eabi-g++ "../Core/Src/Coin.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/Coin.d" -MT"Core/Src/Coin.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Coin.o"
+arm-none-eabi-g++ "../Core/Src/Map.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/Map.d" -MT"Core/Src/Map.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Map.o"
+arm-none-eabi-g++ "../Core/Src/Mob.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/Mob.d" -MT"Core/Src/Mob.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Mob.o"
+arm-none-eabi-g++ "../Core/Src/Player.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/Player.d" -MT"Core/Src/Player.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Player.o"
+arm-none-eabi-g++ "../Core/Src/Spike.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/Spike.d" -MT"Core/Src/Spike.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Spike.o"
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/ssd1306_tests.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ssd1306_tests.d" -MT"Core/Src/ssd1306_tests.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/ssd1306_tests.o"
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  24256	    148	   3828	  28232	   6e48	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+18:29:47 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  25284	    148	   3828	  29260	   724c	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+18:31:58 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  25284	    148	   3828	  29260	   724c	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+18:33:57 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  25416	    148	   3828	  29392	   72d0	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+18:34:19 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.cpp: In function 'int main()':
+../Core/Src/main.cpp:444:23: warning: statement has no effect [-Wunused-value]
+  444 |      boxi.Player_coins==3;
+      |      ~~~~~~~~~~~~~~~~~^~~
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  25416	    148	   3828	  29392	   72d0	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+18:34:27 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  25420	    148	   3828	  29396	   72d4	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+18:34:40 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-size   GAME.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25420	    148	   3828	  29396	   72d4	GAME.elf
+Finished building: default.size.stdout
+ 
+18:35:40 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  25284	    148	   3828	  29260	   724c	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+18:37:50 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  25416	    148	   3828	  29392	   72d0	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+18:37:55 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  25416	    148	   3828	  29392	   72d0	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+18:41:01 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  25432	    148	   3828	  29408	   72e0	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+18:41:06 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-size   GAME.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25432	    148	   3828	  29408	   72e0	GAME.elf
+Finished building: default.size.stdout
+ 
+18:42:06 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  25432	    148	   3828	  29408	   72e0	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+18:43:39 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  25432	    148	   3828	  29408	   72e0	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+18:46:11 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  25468	    148	   3828	  29444	   7304	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+18:49:24 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  25476	    148	   3828	  29452	   730c	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+18:54:45 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  26476	    148	   3828	  30452	   76f4	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+18:54:49 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-size   GAME.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26476	    148	   3828	  30452	   76f4	GAME.elf
+Finished building: default.size.stdout
+ 
+18:58:23 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  25500	    148	   3828	  29476	   7324	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+19:01:36 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  25500	    148	   3828	  29476	   7324	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+19:07:44 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  25500	    148	   3828	  29476	   7324	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+19:16:35 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/Block.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/Block.d" -MT"Core/Src/Block.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Block.o"
+arm-none-eabi-g++ "../Core/Src/Coin.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/Coin.d" -MT"Core/Src/Coin.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Coin.o"
+arm-none-eabi-g++ "../Core/Src/Map.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/Map.d" -MT"Core/Src/Map.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Map.o"
+arm-none-eabi-g++ "../Core/Src/Mob.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/Mob.d" -MT"Core/Src/Mob.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Mob.o"
+arm-none-eabi-g++ "../Core/Src/Player.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/Player.d" -MT"Core/Src/Player.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Player.o"
+arm-none-eabi-g++ "../Core/Src/Spike.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/Spike.d" -MT"Core/Src/Spike.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Spike.o"
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/ssd1306_tests.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ssd1306_tests.d" -MT"Core/Src/ssd1306_tests.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/ssd1306_tests.o"
+In file included from ../Core/Src/main.cpp:36:
+../Core/Inc/Objects.h:25:20: error: 'Bitmap_' was not declared in this scope; did you mean 'Bitmap_mob'?
+   25 | Map easter_egg_map(Bitmap_);
+      |                    ^~~~~~~
+      |                    Bitmap_mob
+../Core/Src/main.cpp: In function 'void easter_egg()':
+../Core/Src/main.cpp:242:36: error: expression cannot be used as a function
+  242 |  if((boxi.pos_x>=124)(boxi.pos_y>40)&&(current_map==5)){
+      |                                    ^
+make: *** [Core/Src/subdir.mk:80: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+19:16:46 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.cpp: In function 'void easter_egg()':
+../Core/Src/main.cpp:242:36: error: expression cannot be used as a function
+  242 |  if((boxi.pos_x>=124)(boxi.pos_y>40)&&(current_map==5)){
+      |                                    ^
+make: *** [Core/Src/subdir.mk:80: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+19:19:43 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.cpp:241:56: error: expected unqualified-id before '{' token
+  241 | void easter_egg(int &cur_map,Player &player ,Map &map);{
+      |                                                        ^
+make: *** [Core/Src/subdir.mk:80: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+19:19:54 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.cpp: In function 'void easter_egg(int&, Player&, Map&)':
+../Core/Src/main.cpp:242:41: error: expression cannot be used as a function
+  242 |  if((player.pos_x>=124)(player.pos_y>=40)&&(cur_map==5)){
+      |                                         ^
+../Core/Src/main.cpp:244:14: error: expected ';' before 'ssd1306_UpdateScreen'
+  244 |    castle_map
+      |              ^
+      |              ;
+  245 |    ssd1306_UpdateScreen();
+      |    ~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.cpp:244:4: warning: statement has no effect [-Wunused-value]
+  244 |    castle_map
+      |    ^~~~~~~~~~
+make: *** [Core/Src/subdir.mk:80: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+19:20:53 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  26556	    148	   3852	  30556	   775c	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+19:21:05 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  26556	    148	   3852	  30556	   775c	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+19:21:25 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-size   GAME.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26556	    148	   3852	  30556	   775c	GAME.elf
+Finished building: default.size.stdout
+ 
+19:21:41 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  26556	    148	   3852	  30556	   775c	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+19:21:43 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-size   GAME.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26556	    148	   3852	  30556	   775c	GAME.elf
+Finished building: default.size.stdout
+ 
+19:23:52 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  26628	    148	   3852	  30628	   77a4	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+19:24:11 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-size   GAME.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26628	    148	   3852	  30628	   77a4	GAME.elf
+Finished building: default.size.stdout
+ 
+19:28:16 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.cpp:62:12: error: invalid conversion from 'const char*' to 'char' [-fpermissive]
+   62 | char msg = "Szymon Nyderek 2023r";
+      |            ^~~~~~~~~~~~~~~~~~~~~~
+      |            |
+      |            const char*
+make: *** [Core/Src/subdir.mk:80: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+19:28:31 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.cpp:62:11: error: invalid conversion from 'const char*' to 'int' [-fpermissive]
+   62 | int msg = "Szymon Nyderek 2023r";
+      |           ^~~~~~~~~~~~~~~~~~~~~~
+      |           |
+      |           const char*
+make: *** [Core/Src/subdir.mk:80: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+19:28:46 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.cpp:62:10: error: expected initializer before string constant
+   62 | int msg  "Szymon Nyderek 2023r";
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:80: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+19:31:00 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.cpp: In function 'void easter_egg()':
+../Core/Src/main.cpp:249:24: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  249 |    ssd1306_WriteString("Szymon Nyderek 2023r", Font_6x8, White);
+      |                        ^~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  28604	    156	   3852	  32612	   7f64	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+19:31:19 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.cpp: In function 'void easter_egg()':
+../Core/Src/main.cpp:249:24: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  249 |    ssd1306_WriteString("Szymon Nyderek 2023r", Font_6x8, White);
+      |                        ^~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  28604	    156	   3852	  32612	   7f64	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+19:32:06 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.cpp: In function 'void easter_egg()':
+../Core/Src/main.cpp:249:24: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  249 |    ssd1306_WriteString("Szymon Nyderek 2023r", Font_6x8, White);
+      |                        ^~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  28604	    160	   3848	  32612	   7f64	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+19:34:04 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.cpp: In function 'void easter_egg()':
+../Core/Src/main.cpp:249:24: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  249 |    ssd1306_WriteString("Szymon Nyderek 2023r", Font_6x8, White);
+      |                        ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.cpp:251:24: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  251 |    ssd1306_WriteString("Nyderek", Font_6x8, White);
+      |                        ^~~~~~~~~
+../Core/Src/main.cpp:253:24: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  253 |    ssd1306_WriteString("2023r", Font_6x8, White);
+      |                        ^~~~~~~
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  28668	    160	   3848	  32676	   7fa4	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+19:35:17 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-size   GAME.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28668	    160	   3848	  32676	   7fa4	GAME.elf
+Finished building: default.size.stdout
+ 
+19:36:03 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.cpp: In function 'void easter_egg()':
+../Core/Src/main.cpp:249:24: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  249 |    ssd1306_WriteString("Szymon", Font_6x8, White);
+      |                        ^~~~~~~~
+../Core/Src/main.cpp:251:24: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  251 |    ssd1306_WriteString("Nyderek", Font_6x8, White);
+      |                        ^~~~~~~~~
+../Core/Src/main.cpp:253:24: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  253 |    ssd1306_WriteString("2023r", Font_6x8, White);
+      |                        ^~~~~~~
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  28652	    160	   3848	  32660	   7f94	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+19:36:37 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.cpp: In function 'void easter_egg()':
+../Core/Src/main.cpp:249:24: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  249 |    ssd1306_WriteString("Szymon", Font_6x8, White);
+      |                        ^~~~~~~~
+../Core/Src/main.cpp:251:24: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  251 |    ssd1306_WriteString("Nyderek", Font_6x8, White);
+      |                        ^~~~~~~~~
+../Core/Src/main.cpp:253:24: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  253 |    ssd1306_WriteString("2023r", Font_6x8, White);
+      |                        ^~~~~~~
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  28652	    160	   3848	  32660	   7f94	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+19:40:03 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.cpp: In function 'void easter_egg()':
+../Core/Src/main.cpp:255:24: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  255 |    ssd1306_WriteString("Szymon", Font_6x8, White);
+      |                        ^~~~~~~~
+../Core/Src/main.cpp:257:24: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  257 |    ssd1306_WriteString("Nyderek", Font_6x8, White);
+      |                        ^~~~~~~~~
+../Core/Src/main.cpp:259:24: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  259 |    ssd1306_WriteString("2023r", Font_6x8, White);
+      |                        ^~~~~~~
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  28708	    160	   3848	  32716	   7fcc	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+19:40:06 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-size   GAME.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28708	    160	   3848	  32716	   7fcc	GAME.elf
+Finished building: default.size.stdout
+ 
+19:41:48 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.cpp: In function 'void easter_egg()':
+../Core/Src/main.cpp:255:24: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  255 |    ssd1306_WriteString("Szymon", Font_6x8, White);
+      |                        ^~~~~~~~
+../Core/Src/main.cpp:257:24: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  257 |    ssd1306_WriteString("Nyderek", Font_6x8, White);
+      |                        ^~~~~~~~~
+../Core/Src/main.cpp:259:24: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  259 |    ssd1306_WriteString("2023r", Font_6x8, White);
+      |                        ^~~~~~~
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  28708	    160	   3848	  32716	   7fcc	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+19:42:37 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.cpp: In function 'void easter_egg()':
+../Core/Src/main.cpp:255:24: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  255 |    ssd1306_WriteString("Szymon", Font_6x8, White);
+      |                        ^~~~~~~~
+../Core/Src/main.cpp:257:24: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  257 |    ssd1306_WriteString("Nyderek", Font_6x8, White);
+      |                        ^~~~~~~~~
+../Core/Src/main.cpp:259:24: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  259 |    ssd1306_WriteString("2023r", Font_6x8, White);
+      |                        ^~~~~~~
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  28708	    160	   3848	  32716	   7fcc	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+19:43:17 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.cpp: In function 'void easter_egg()':
+../Core/Src/main.cpp:255:24: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  255 |    ssd1306_WriteString("Szymon", Font_6x8, White);
+      |                        ^~~~~~~~
+../Core/Src/main.cpp:257:24: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  257 |    ssd1306_WriteString("Nyderek", Font_6x8, White);
+      |                        ^~~~~~~~~
+../Core/Src/main.cpp:259:24: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  259 |    ssd1306_WriteString("2023r", Font_6x8, White);
+      |                        ^~~~~~~
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  28708	    160	   3848	  32716	   7fcc	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+19:46:26 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.cpp: In function 'void easter_egg()':
+../Core/Src/main.cpp:255:24: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  255 |    ssd1306_WriteString("Font 6x8", Font_6x8, White);
+      |                        ^~~~~~~~~~
+../Core/Src/main.cpp:256:24: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  256 |    ssd1306_WriteString("Szymon", Font_6x8, White);
+      |                        ^~~~~~~~
+../Core/Src/main.cpp:258:24: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  258 |    ssd1306_WriteString("Nyderek", Font_6x8, White);
+      |                        ^~~~~~~~~
+../Core/Src/main.cpp:260:24: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  260 |    ssd1306_WriteString("2023r", Font_6x8, White);
+      |                        ^~~~~~~
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  28736	    160	   3848	  32744	   7fe8	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+19:47:12 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.cpp: In function 'void easter_egg()':
+../Core/Src/main.cpp:255:24: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  255 |    ssd1306_WriteString("Szymon", Font_6x8, White);
+      |                        ^~~~~~~~
+../Core/Src/main.cpp:257:24: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  257 |    ssd1306_WriteString("Nyderek", Font_6x8, White);
+      |                        ^~~~~~~~~
+../Core/Src/main.cpp:259:24: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  259 |    ssd1306_WriteString("2023r", Font_6x8, White);
+      |                        ^~~~~~~
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  28708	    160	   3848	  32716	   7fcc	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+19:48:06 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.cpp: In function 'void easter_egg()':
+../Core/Src/main.cpp:254:24: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  254 |    ssd1306_WriteString("Szymon", Font_6x8, White);
+      |                        ^~~~~~~~
+../Core/Src/main.cpp:256:24: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  256 |    ssd1306_WriteString("Nyderek", Font_6x8, White);
+      |                        ^~~~~~~~~
+../Core/Src/main.cpp:258:24: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  258 |    ssd1306_WriteString("2023r", Font_6x8, White);
+      |                        ^~~~~~~
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  28708	    160	   3848	  32716	   7fcc	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+19:49:58 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.cpp: In function 'void easter_egg()':
+../Core/Src/main.cpp:259:24: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  259 |    ssd1306_WriteString("Szymon", Font_6x8, White);
+      |                        ^~~~~~~~
+../Core/Src/main.cpp:261:24: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  261 |    ssd1306_WriteString("Nyderek", Font_6x8, White);
+      |                        ^~~~~~~~~
+../Core/Src/main.cpp:263:24: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  263 |    ssd1306_WriteString("2023r", Font_6x8, White);
+      |                        ^~~~~~~
+../Core/Src/main.cpp:246:8: warning: unused variable 'Szymon_string' [-Wunused-variable]
+  246 |   char Szymon_string[20]="Szymon";
+      |        ^~~~~~~~~~~~~
+../Core/Src/main.cpp:247:8: warning: unused variable 'Nyderek_string' [-Wunused-variable]
+  247 |   char Nyderek_string[20]="Nyderek";
+      |        ^~~~~~~~~~~~~~
+../Core/Src/main.cpp:248:8: warning: unused variable 'year_string' [-Wunused-variable]
+  248 |   char year_string[20]="2023r";
+      |        ^~~~~~~~~~~
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  28876	    160	   3848	  32884	   8074	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+19:51:05 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  28684	    220	   3844	  32748	   7fec	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+19:51:18 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-size   GAME.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28684	    220	   3844	  32748	   7fec	GAME.elf
+Finished building: default.size.stdout
+ 
+19:54:07 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  28684	    220	   3844	  32748	   7fec	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+20:50:42 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  28684	    216	   3848	  32748	   7fec	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 

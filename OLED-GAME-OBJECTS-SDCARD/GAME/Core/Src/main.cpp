@@ -35,6 +35,7 @@
 #include "Coin.h"
 #include"Objects.h"
 #include"tm_stm32f4_rng.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -57,9 +58,13 @@
 
 
 //--------GAME INTS------------//
+// strings for easter egg
+char Szymon_string[20]="Szymon";
+char Nyderek_string[20]="Nyderek";
+char year_string[20]="2023r";
 //int for map
 int is_map_changed=0;
-int current_map=4;
+int current_map=0;
 int ground_level=62;
 //ints for Jump
 int Jump_height;
@@ -87,6 +92,8 @@ void Check_buttons(Player &player,int barrier);
 void Game(Player player,int &barrier,int &Jump_height);
 void Display_Over_Screen();
 void change_map(int &cur_map,int &is_map_changed,int &Block_1_A,int &Block_1_B,int &Mob_1_A,int &Mob_1_B,Coin coin);
+void WIN_GAME();
+void easter_egg();
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -235,6 +242,61 @@ c1.is_coin_alive=true;
  }
 }
 }
+/*-------------------Easter egg----------------------------------------------*/
+//Its easter egg on map 5 on the right bottom corner of the map
+void easter_egg(){
+	if((boxi.pos_x>=124)&&(boxi.pos_y>=40)&&(current_map==5)){
+	  //--CHANGE POSINTIONS--//
+	  boxi.Change_position(80,34);
+	  m1.Change_position(80,43);
+	  B[0].Change_position(80,52);
+	  //--DISPLAY--//
+	  ssd1306_Fill(Black);
+	  boxi.Display_Player();
+	  m1.Display_mob();
+	  B[0].Display_Block();
+	  easter_egg_map.Display_map();
+	  ssd1306_SetCursor(30, 34);
+	  ssd1306_WriteString(Szymon_string, Font_6x8, White);
+	  ssd1306_SetCursor(30, 43);
+	  ssd1306_WriteString(Nyderek_string, Font_6x8, White);
+	  ssd1306_SetCursor(30,54);
+	  ssd1306_WriteString(year_string, Font_6x8, White);
+	  ssd1306_UpdateScreen();
+	  HAL_Delay(10000);
+	  //---WIN----//
+	  boxi.Player_coins=3000;
+	}
+}
+/*-------------------WIN FUNCTION-------------------------------------------*/
+void WIN_GAME(){
+	if(boxi.Player_coins>=5){
+	boxi.Change_position(3,54);
+	//----go to the castle-----//
+	for(int i=0;i<=45;i++){//display boxi going to the castle
+		boxi.pos_x++;
+		ssd1306_Fill(Black);
+		castle_map.Display_map();
+        boxi.Display_Player();
+        ssd1306_UpdateScreen();
+	}
+	  ssd1306_Fill(Black);
+	  castle_map.Display_map();
+	  ssd1306_UpdateScreen();
+	  HAL_Delay(4500);
+	//---WIN SCREEN---//
+	for(int i=0;i>=0;i++){
+	 ssd1306_Fill(White);
+     ssd1306_DrawBitmap(0, 0, Bitmap_win, 128, 64, Black);
+     ssd1306_UpdateScreen();
+     HAL_Delay(700);
+     ssd1306_Fill(Black);
+     ssd1306_DrawBitmap(0, 0, Bitmap_win, 128, 64,White);
+     ssd1306_UpdateScreen();
+     HAL_Delay(700);
+	}
+	}
+}
 /*-------------------jump function------------------------------------------*/
 	void Jump(Player &player,int &jump_height,int &barrier){
 
@@ -340,17 +402,19 @@ c1.is_coin_alive=true;
 
 		  //----------GRAVITATION FUNCTION----------//
 		  Gravitation(boxi, ground_level,barrier);
-
 		  //--------BUTTONS CHECKING ---------------//
 	      Check_buttons(boxi,barrier);
-
 	      //----------JUMPING FUNCTION--------------//
 	      Jump(boxi,Jump_height,barrier);
 	      //-----------CHANGE MAP FUNCTION----------//
 	      change_map(current_map,is_map_changed,Block_1_A,Block_1_B,Mob_1_A,Mob_1_B,c1);
-
+	      //------------WIN FUNCTION----------------//
+	      WIN_GAME();
+	      //-------------easter egg----------------//
+	      easter_egg();
 		  //-----------LED TEST--------------//
 		  //HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin); //i am turning it on for tests but game will go faster without it
+
 	}
 	else {
 		Display_Over_Screen();
@@ -419,7 +483,7 @@ int main(void)
   	    TM_RNG_Init();
 
 
-
+    // boxi.Player_coins=3;
 
   /* USER CODE END 2 */
 

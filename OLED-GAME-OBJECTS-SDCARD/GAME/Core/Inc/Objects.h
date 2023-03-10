@@ -20,6 +20,9 @@
 
  // creating a map//
 Map map1(Bitmap_map);
+Map castle_map(Bitmap_castle);
+Map Win_map(Bitmap_win);
+Map easter_egg_map(Bitmap_easter_egg);
 // creating the player//
 Player boxi(10,4,8,8);       //there we are creating our map adding player ,blocks, mobs and spikes
 

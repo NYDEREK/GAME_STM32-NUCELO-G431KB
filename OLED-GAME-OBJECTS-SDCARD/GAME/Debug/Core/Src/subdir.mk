@@ -7,7 +7,6 @@
 C_SRCS += \
 ../Core/Src/gpio.c \
 ../Core/Src/i2c.c \
-../Core/Src/main.c \
 ../Core/Src/rng.c \
 ../Core/Src/ssd1306.c \
 ../Core/Src/ssd1306_fonts.c \
@@ -32,7 +31,6 @@ CPP_SRCS += \
 C_DEPS += \
 ./Core/Src/gpio.d \
 ./Core/Src/i2c.d \
-./Core/Src/main.d \
 ./Core/Src/rng.d \
 ./Core/Src/ssd1306.d \
 ./Core/Src/ssd1306_fonts.d \
