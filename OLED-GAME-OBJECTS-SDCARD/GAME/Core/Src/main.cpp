@@ -59,8 +59,9 @@
 
 
 //--------GAME INTS------------//
-//random number
-
+//----screen data-------------//
+const int Screen_width=128; //in pixels
+const int Screen_height=64;
 // strings for easter egg
 char Szymon_string[20]="Szymon";
 char Nyderek_string[20]="Nyderek";
@@ -69,6 +70,7 @@ char year_string[20]="2023r";
 int is_map_changed=0;
 int current_map=0;
 int ground_level=62;
+int was_map_activated[15];
 //ints for Jump
 int Jump_height;
 
@@ -97,6 +99,7 @@ void Display_Over_Screen();
 void change_map(int &cur_map,int &is_map_changed,int &Block_1_A,int &Block_1_B,int &Mob_1_A,int &Mob_1_B,Coin coin);
 void WIN_GAME();
 void easter_egg();
+void Check_the_border(Player &player,int width);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -107,18 +110,21 @@ if(coin.is_coin_gathered==true){//if coin gathered boxi is go to the next map
 	//random number generation for choosing a map
 	uint32_t random_num=0;
 	HAL_RNG_GenerateRandomNumber(&hrng, &random_num);
-	cur_map=random_num%5+1;
-	//cur_map++; //random map will be in future work in progress
-if(cur_map==2){//map 2
+	cur_map=random_num%6;
+
+if(cur_map==0){//map 1
+if(was_map_activated[0]!=true){
 //-----POSITIONING OBJECTS-----//
 //--------PLAYER------------//
 boxi.Change_position(12, 0);
 //--------BLOCKS------------//
 B[0].Change_position(1,20);
 B[1].Change_position(11,20);
+
 B[2].Change_position(21,20);
 B[3].Change_position(91,20);
 B[4].Change_position(101,20);
+
 B[5].Change_position(81,52);
 B[6].Change_position(91,52);
 B[8].Change_position(101,52);
@@ -141,9 +147,12 @@ S[5].Change_position(122, 48);
 //--------COIN--------------/
 c1.Change_position(82,44);
 c1.is_coin_alive=true;
-//cur_map++;
+was_map_activated[0]=true;
+
 }
-if(cur_map==3){// map 3
+}
+if(cur_map==1){// map 2
+if(was_map_activated[1]!=true){
 //-----POSITIONING OBJECTS-----//
 //--------PLAYER------------//
 boxi.Change_position(2, 0);
@@ -167,52 +176,57 @@ Mob_1_A=86;
 Mob_1_B=126;
 //--------SPIKES--------------//
 S[0].Change_position(18, 32);
-S[1].Change_position(40, 32);
-S[2].Change_position(47, 32);
-S[3].Change_position(54, 32);
-S[4].Change_position(61, 32);
+S[1].Change_position(40, 30);
+S[2].Change_position(47, 30);
+S[3].Change_position(54, 30);
+S[4].Change_position(61, 30);
 S[5].Change_position(96, 32);
 //--------COIN--------------/
 c1.Change_position(32,45);
 c1.is_coin_alive=true;
-//cur_map++;
+was_map_activated[1]=true;
  }
+}
 
-if(cur_map==4){// map 4
+if(cur_map==2){// map 3
+if(was_map_activated[2]!=true){
 //-----POSITIONING OBJECTS-----//
 //--------PLAYER------------//
 boxi.Change_position(5, 0);
 //--------BLOCKS------------//
 B[0].Change_position(1,46);
-B[1].Change_position(31,56);
-B[2].Change_position(41,56);
-B[3].Change_position(51,56);
-B[4].Change_position(61,56);
-B[5].Change_position(71,56);
+B[1].Change_position(31,58);
+B[2].Change_position(51,58);
+B[3].Change_position(51,58);
+B[4].Change_position(61,58);
+B[5].Change_position(71,58);
 B[6].Change_position(96,52);
 B[8].Change_position(106,42);
-B[9].Change_position(31,30);
-B[7].Change_position(70,36);
-Block_1_A=41;
+B[9].Change_position(41,22);
+B[7].Change_position(70,32);
+Block_1_A=51;
 Block_1_B=106;
 //--------MOBS----------------//
-m1.Change_position(60, 48);
+m1.Change_position(60, 50);
 m1.is_mob_alive=true;
-Mob_1_A=31;
+Mob_1_A=51;
 Mob_1_B=81;
 //--------SPIKES--------------//
-S[0].Change_position(21, 60);
-S[1].Change_position(26, 60);
-S[2].Change_position(81, 60);
-S[3].Change_position(86, 60);
-S[4].Change_position(91, 60);
+S[0].Change_position(17, 56);
+S[1].Change_position(22, 56);
+S[2].Change_position(83, 56);
+S[3].Change_position(89, 56);
+S[4].Change_position(12, 56);
 S[5].Change_position(120, 35);
 //--------COIN--------------/
-c1.Change_position(32,20);
+c1.Change_position(42,12);
 c1.is_coin_alive=true;
-//cur_map++;
+was_map_activated[2]=true;
  }
-if(cur_map==5){// map 5
+}
+if(cur_map==3){// map 4
+if(was_map_activated[3]!=true){
+
 //-----POSITIONING OBJECTS-----//
 //--------PLAYER------------//
 boxi.Change_position(111, 0);
@@ -244,21 +258,72 @@ S[5].Change_position(51,24);
 //--------COIN--------------/
 c1.Change_position(48,44);
 c1.is_coin_alive=true;
-//cur_map++;
+was_map_activated[3]=true;
+ }
+}
+if(cur_map==4){// map 5
+if(was_map_activated[4]!=true){
+//-----POSITIONING OBJECTS-----//
+//--------PLAYER------------//
+boxi.Change_position(3, 26);
+//--------BLOCKS------------//
+B[0].Change_position(1,36);
+B[1].Change_position(11,36);
+
+B[2].Change_position(31,44);
+B[3].Change_position(46,44);
+B[4].Change_position(61,44);
+
+B[5].Change_position(81,36);
+B[6].Change_position(96,26);
+B[8].Change_position(106,16);
+B[9].Change_position(1,16);
+B[7].Change_position(56,16);
+Block_1_A=11;
+Block_1_B=106;
+//--------MOBS----------------//
+m1.Change_position(46,36);
+m1.is_mob_alive=true;
+Mob_1_A=31;
+Mob_1_B=71;
+//--------SPIKES--------------//
+S[0].Change_position(21, 42);
+S[1].Change_position(26, 42);
+S[2].Change_position(71, 42);
+S[3].Change_position(76, 42);
+S[4].Change_position(91, 30);
+S[5].Change_position(116,20);
+//--------COIN--------------/
+c1.Change_position(3,8);
+c1.is_coin_alive=true;
+was_map_activated[4]=true;
  }
 }
 }
+}
+/*--------------------Check border--------------------------------------------*/
+
+// Our screen is 128x64px width=128px
+
+void Check_the_border(Player &player,int width){//function blocking boxi on the borders of the map
+	if(player.LHIT<=0){//if boxi hit the left wall of the map
+		player.pos_x++;
+	}
+	if(player.RHIT>=width){//if boxi hit the right wall of the map
+		player.pos_x--;
+	}
+}
 /*-------------------Easter egg----------------------------------------------*/
 //Its easter egg on map 5 on the right bottom corner of the map
-void easter_egg(){
-	if((boxi.pos_x>=124)&&(boxi.pos_y>=40)&&(current_map==5)){
+void easter_egg(Player &player){
+	if((player.RHIT>=124)&&(player.pos_y>=40)&&(current_map==3)){
 	  //--CHANGE POSINTIONS--//
-	  boxi.Change_position(80,34);
+	  player.Change_position(80,34);
 	  m1.Change_position(80,43);
 	  B[0].Change_position(80,52);
 	  //--DISPLAY--//
 	  ssd1306_Fill(Black);
-	  boxi.Display_Player();
+	  player.Display_Player();
 	  m1.Display_mob();
 	  B[0].Display_Block();
 	  easter_egg_map.Display_map();
@@ -271,7 +336,7 @@ void easter_egg(){
 	  ssd1306_UpdateScreen();
 	  HAL_Delay(10000);
 	  //---WIN----//
-	  boxi.Player_coins=3000;
+	  player.Player_coins=3000;
 	}
 }
 /*-------------------WIN FUNCTION-------------------------------------------*/
@@ -395,6 +460,7 @@ void WIN_GAME(){
 		  m1.Move_mob(Mob_1_A,Mob_1_B);
 
 		  //--------CHECKING BARRIERS----------------//
+		  Check_the_border(boxi,Screen_width);
 		  c1.Check(boxi,current_map);
 		  m1.check(boxi);
 		  for(int i=0; i<=5; i++){//checking spikes
@@ -417,7 +483,7 @@ void WIN_GAME(){
 	      //------------WIN FUNCTION----------------//
 	      WIN_GAME();
 	      //-------------easter egg----------------//
-	      easter_egg();
+	      easter_egg(boxi);
 		  //-----------LED TEST--------------//
 		  //HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin); //i am turning it on for tests but game will go faster without it
 
@@ -487,10 +553,6 @@ int main(void)
   	  S[5].Change_position(36, 56);
   	  c1.Change_position(119, 36);
   	 /* Initialize random number generator */
-
-
-    // boxi.Player_coins=3;
-
   /* USER CODE END 2 */
 
   /* Infinite loop */

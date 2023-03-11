@@ -1,16 +1,17 @@
-../Core/Src/main.cpp:105:6:void change_map(int&, int&, int&, int&, int&, int&, Coin)	32	static
-../Core/Src/main.cpp:253:6:void easter_egg()	8	static
-../Core/Src/main.cpp:278:6:void WIN_GAME()	24	static
-../Core/Src/main.cpp:307:7:void Jump(Player&, int&, int&)	24	static
-../Core/Src/main.cpp:324:7:void Gravitation(Player&, int, int&)	24	static
-../Core/Src/main.cpp:340:7:void Check_buttons(Player&, int)	16	static
-../Core/Src/main.cpp:358:7:void Display_Over_Screen()	16	static
+../Core/Src/main.cpp:108:6:void change_map(int&, int&, int&, int&, int&, int&, Coin)	32	static
+../Core/Src/main.cpp:308:6:void Check_the_border(Player&, int)	16	static
+../Core/Src/main.cpp:318:6:void easter_egg(Player&)	16	static
+../Core/Src/main.cpp:343:6:void WIN_GAME()	24	static
+../Core/Src/main.cpp:372:7:void Jump(Player&, int&, int&)	24	static
+../Core/Src/main.cpp:389:7:void Gravitation(Player&, int, int&)	24	static
+../Core/Src/main.cpp:405:7:void Check_buttons(Player&, int)	16	static
+../Core/Src/main.cpp:423:7:void Display_Over_Screen()	16	static
 ../Core/Inc/Coin.h:16:7:constexpr Coin::Coin(const Coin&)	16	static
-../Core/Src/main.cpp:366:7:void Game(Player, int&, int&)	104	static
+../Core/Src/main.cpp:431:7:void Game(Player, int&, int&)	104	static
 ../Core/Inc/Player.h:14:7:constexpr Player::Player(const Player&)	16	static
-../Core/Src/main.cpp:435:5:int main()	56	static
-../Core/Src/main.cpp:512:6:void SystemClock_Config()	88	static
-../Core/Src/main.cpp:562:6:void Error_Handler()	4	static,ignoring_inline_asm
-../Core/Src/main.cpp:571:1:void __static_initialization_and_destruction_0(int, int)	48	static
-../Core/Src/main.cpp:571:1:cpp)	8	static
-../Core/Src/main.cpp:571:1:cpp)	8	static
+../Core/Src/main.cpp:501:5:int main()	56	static
+../Core/Src/main.cpp:574:6:void SystemClock_Config()	88	static
+../Core/Src/main.cpp:624:6:void Error_Handler()	4	static,ignoring_inline_asm
+../Core/Src/main.cpp:633:1:void __static_initialization_and_destruction_0(int, int)	48	static
+../Core/Src/main.cpp:633:1:cpp)	8	static
+../Core/Src/main.cpp:633:1:cpp)	8	static

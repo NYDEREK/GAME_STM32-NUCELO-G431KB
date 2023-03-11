@@ -22,7 +22,7 @@ const unsigned char* bitmap;
 
 //------methods------//
 public:
-Block(int x=0, int y=0,int w=10,int h=10,const unsigned char* b=Bitmap_block,int ml=0, int mr=1);
+Block(int x=0, int y=0,int w=10,int h=10,const unsigned char* b=Bitmap_block_2,int ml=0, int mr=1);
 void generateHIT();                                                                              /* generates hit box of our block */
 void Check(int &barrier,Player &player);                                                         /*checks if player hit the hit box*/
 void Display_Block();                                                                            /*displays the block              */
