@@ -16,7 +16,6 @@
 "./Core/Src/syscalls.o"
 "./Core/Src/sysmem.o"
 "./Core/Src/system_stm32g4xx.o"
-"./Core/Src/tm_stm32f4_rng.o"
 "./Core/Src/usart.o"
 "./Core/Startup/startup_stm32g431kbtx.o"
 "./Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.o"

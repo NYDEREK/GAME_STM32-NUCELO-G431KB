@@ -37,7 +37,7 @@ Core/Src/main.o: ../Core/Src/main.cpp ../Core/Inc/main.h \
  ../Core/Inc/Mob.h ../Core/Inc/Spike.h ../Core/Inc/Coin.h \
  ../Core/Inc/Objects.h ../Core/Inc/Block.h ../Core/Inc/Map.h \
  ../Core/Inc/Mob.h ../Core/Inc/Spike.h ../Core/Inc/Coin.h \
- ../Core/Inc/tm_stm32f4_rng.h ../Core/Inc/defines.h
+ ../Core/Inc/rng.h
 ../Core/Inc/main.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h:
 ../Core/Inc/stm32g4xx_hal_conf.h:
@@ -92,5 +92,4 @@ Core/Src/main.o: ../Core/Src/main.cpp ../Core/Inc/main.h \
 ../Core/Inc/Mob.h:
 ../Core/Inc/Spike.h:
 ../Core/Inc/Coin.h:
-../Core/Inc/tm_stm32f4_rng.h:
-../Core/Inc/defines.h:
+../Core/Inc/rng.h:

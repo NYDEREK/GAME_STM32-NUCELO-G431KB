@@ -34,11 +34,12 @@
 #include "Spike.h"
 #include "Coin.h"
 #include"Objects.h"
-#include"tm_stm32f4_rng.h"
+#include "rng.h"
 
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
+
 /* USER CODE BEGIN PTD */
 
 /* USER CODE END PTD */
@@ -58,6 +59,8 @@
 
 
 //--------GAME INTS------------//
+//random number
+
 // strings for easter egg
 char Szymon_string[20]="Szymon";
 char Nyderek_string[20]="Nyderek";
@@ -101,8 +104,11 @@ void easter_egg();
 /*-------------------------------change map function---------------------------------------*/
 void change_map(int &cur_map,int &is_map_changed,int &Block_1_A,int &Block_1_B,int &Mob_1_A,int &Mob_1_B,Coin coin){//maps~
 if(coin.is_coin_gathered==true){//if coin gathered boxi is go to the next map
-// cur_map=TM_RNG_Get()%1+2;
-	cur_map++; //random map will be in future work in progress
+	//random number generation for choosing a map
+	uint32_t random_num=0;
+	HAL_RNG_GenerateRandomNumber(&hrng, &random_num);
+	cur_map=random_num%5+1;
+	//cur_map++; //random map will be in future work in progress
 if(cur_map==2){//map 2
 //-----POSITIONING OBJECTS-----//
 //--------PLAYER------------//
@@ -126,8 +132,8 @@ m1.is_mob_alive=true;
 Mob_1_A=90;
 Mob_1_B=120;
 //--------SPIKES--------------//
-S[0].Change_position(2, 14);
-S[1].Change_position(7, 14);
+S[0].Change_position(42, 34); //14
+S[1].Change_position(57, 34);
 S[2].Change_position(81, 26);
 S[3].Change_position(86, 26);
 S[4].Change_position(122, 16);
@@ -452,6 +458,7 @@ int main(void)
   MX_GPIO_Init();
   MX_USART2_UART_Init();
   MX_I2C1_Init();
+  MX_RNG_Init();
   /* USER CODE BEGIN 2 */
   	  //Initialize  of libraries//
   	  ssd1306_Init();
@@ -480,7 +487,6 @@ int main(void)
   	  S[5].Change_position(36, 56);
   	  c1.Change_position(119, 36);
   	 /* Initialize random number generator */
-  	    TM_RNG_Init();
 
 
     // boxi.Player_coins=3;
