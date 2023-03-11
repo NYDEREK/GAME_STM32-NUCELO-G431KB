@@ -23,7 +23,8 @@ in main we have functions: Gravitation , Jump , Check_buttons . Every object oth
 
 and we have functions: Display_Over_Screen, Game. In the game, we use all the functions of the objects and display the game. In Display_Over_Screen, we display the game on the screen when a player dies
 
-![obraz_2023-03-04_113846259](https://user-images.githubusercontent.com/112076828/222895357-9013f0dd-9c14-4ab1-adc9-1f617cd15634.png)
+![obraz_2023-03-11_224451331](https://user-images.githubusercontent.com/112076828/224512791-00d2890b-c093-4e59-8407-59cc09a5ac71.png)
+
 
 for OLED i am using afiskon's library https://github.com/afiskon/stm32-ssd1306
 
