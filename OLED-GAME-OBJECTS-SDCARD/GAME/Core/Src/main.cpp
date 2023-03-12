@@ -299,6 +299,45 @@ c1.is_coin_alive=true;
 was_map_activated[4]=true;
  }
 }
+if(cur_map==5){// map 6
+if(was_map_activated[5]!=true){
+//-----POSITIONING OBJECTS-----//
+//--------PLAYER------------//
+boxi.Change_position(2, 0);
+//--------BLOCKS------------//
+B[0].Change_position(1,52);
+B[1].Change_position(11,52);
+
+B[2].Change_position(86,52);
+B[3].Change_position(101,42);
+B[4].Change_position(116,32);
+
+B[5].Change_position(1,20);
+B[6].Change_position(31,20);
+B[8].Change_position(61,20);
+B[9].Change_position(91,20);
+
+B[7].Change_position(51,52);
+Block_1_A=21;
+Block_1_B=86;
+//--------MOBS----------------//
+m1.Change_position(61,12);
+m1.is_mob_alive=true;
+Mob_1_A=31;
+Mob_1_B=101;
+//--------SPIKES--------------//
+S[0].Change_position(16, 30);
+S[1].Change_position(21, 30);
+S[2].Change_position(46, 30);
+S[3].Change_position(51, 30);
+S[4].Change_position(76, 30);
+S[5].Change_position(81,30);
+//--------COIN--------------/
+c1.Change_position(3,42);
+c1.is_coin_alive=true;
+was_map_activated[5]=true;
+ }
+}
 }
 }
 /*--------------------Check border--------------------------------------------*/
