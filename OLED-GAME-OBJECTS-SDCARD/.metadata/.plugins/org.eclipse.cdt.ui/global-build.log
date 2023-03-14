@@ -2405,3 +2405,198 @@ Finished building: default.size.stdout
  
 Finished building: GAME.list
  
+16:59:12 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  30116	    216	   3928	  34260	   85d4	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+16:59:45 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  30116	    216	   3928	  34260	   85d4	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+17:01:38 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.cpp: In function 'void Game(Player, int&, int&)':
+../Core/Src/main.cpp:523:22: error: 'class Player' has no member named 'castle_map'
+  523 |        WIN_GAME(boxi.castle_map);
+      |                      ^~~~~~~~~~
+make: *** [Core/Src/subdir.mk:77: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:02:57 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  30220	    216	   3928	  34364	   863c	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+17:03:58 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  30380	    156	   3932	  34468	   86a4	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+17:04:41 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  30380	    156	   3932	  34468	   86a4	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+17:06:22 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.cpp: In function 'void change_map(int&, int&, int&, int&, int&, int&, Coin, int&)':
+../Core/Src/main.cpp:112:21: error: invalid types 'int[int]' for array subscript
+  112 | if(was_map_activated[0]!=true){
+      |                     ^
+../Core/Src/main.cpp:146:18: error: invalid types 'int[int]' for array subscript
+  146 | was_map_activated[0]=true;
+      |                  ^
+../Core/Src/main.cpp:151:21: error: invalid types 'int[int]' for array subscript
+  151 | if(was_map_activated[1]!=true){
+      |                     ^
+../Core/Src/main.cpp:183:18: error: invalid types 'int[int]' for array subscript
+  183 | was_map_activated[1]=true;
+      |                  ^
+../Core/Src/main.cpp:188:21: error: invalid types 'int[int]' for array subscript
+  188 | if(was_map_activated[2]!=true){
+      |                     ^
+../Core/Src/main.cpp:220:18: error: invalid types 'int[int]' for array subscript
+  220 | was_map_activated[2]=true;
+      |                  ^
+../Core/Src/main.cpp:224:21: error: invalid types 'int[int]' for array subscript
+  224 | if(was_map_activated[3]!=true){
+      |                     ^
+../Core/Src/main.cpp:257:18: error: invalid types 'int[int]' for array subscript
+  257 | was_map_activated[3]=true;
+      |                  ^
+../Core/Src/main.cpp:261:21: error: invalid types 'int[int]' for array subscript
+  261 | if(was_map_activated[4]!=true){
+      |                     ^
+../Core/Src/main.cpp:295:18: error: invalid types 'int[int]' for array subscript
+  295 | was_map_activated[4]=true;
+      |                  ^
+../Core/Src/main.cpp:299:21: error: invalid types 'int[int]' for array subscript
+  299 | if(was_map_activated[5]!=true){
+      |                     ^
+../Core/Src/main.cpp:334:18: error: invalid types 'int[int]' for array subscript
+  334 | was_map_activated[5]=true;
+      |                  ^
+make: *** [Core/Src/subdir.mk:77: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:07:01 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.cpp:104:121: error: declaration of 'was_map_activated' as array of references
+  104 | void change_map(int &cur_map,int &is_map_changed,int &Block_1_A,int &Block_1_B,int &Mob_1_A,int &Mob_1_B,Coin coin,int &was_map_activated[]){//maps~
+      |                                                                                                                         ^~~~~~~~~~~~~~~~~
+../Core/Src/main.cpp: In function 'void change_map(...)':
+../Core/Src/main.cpp:105:4: error: 'coin' was not declared in this scope; did you mean 'Coin'?
+  105 | if(coin.is_coin_gathered==true){//if coin gathered boxi is go to the next map
+      |    ^~~~
+      |    Coin
+../Core/Src/main.cpp:109:2: error: 'cur_map' was not declared in this scope
+  109 |  cur_map=random_num%6;
+      |  ^~~~~~~
+make: *** [Core/Src/subdir.mk:77: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:07:08 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.cpp:104:121: error: declaration of 'was_map_activated' as array of references
+  104 | void change_map(int &cur_map,int &is_map_changed,int &Block_1_A,int &Block_1_B,int &Mob_1_A,int &Mob_1_B,Coin coin,int &was_map_activated[15]){//maps~
+      |                                                                                                                         ^~~~~~~~~~~~~~~~~
+../Core/Src/main.cpp: In function 'void change_map(...)':
+../Core/Src/main.cpp:105:4: error: 'coin' was not declared in this scope; did you mean 'Coin'?
+  105 | if(coin.is_coin_gathered==true){//if coin gathered boxi is go to the next map
+      |    ^~~~
+      |    Coin
+../Core/Src/main.cpp:109:2: error: 'cur_map' was not declared in this scope
+  109 |  cur_map=random_num%6;
+      |  ^~~~~~~
+make: *** [Core/Src/subdir.mk:77: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:07:48 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  30380	    156	   3932	  34468	   86a4	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+17:08:49 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-size   GAME.elf 
+   text	   data	    bss	    dec	    hex	filename
+  30380	    156	   3932	  34468	   86a4	GAME.elf
+Finished building: default.size.stdout
+ 
+17:09:41 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "GAME.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Szymon\OneDrive\Pulpit\SOFTY_STM\OLED-GAME-OBJECTS-SDCARD\GAME\STM32G431KBTX_FLASH.ld" -Wl,-Map="GAME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: GAME.elf
+ 
+arm-none-eabi-size   GAME.elf 
+arm-none-eabi-objdump -h -S  GAME.elf  > "GAME.list"
+   text	   data	    bss	    dec	    hex	filename
+  30380	    156	   3932	  34468	   86a4	GAME.elf
+Finished building: default.size.stdout
+ 
+Finished building: GAME.list
+ 
+17:10:19 **** Incremental Build of configuration Debug for project GAME ****
+make -j4 all 
+arm-none-eabi-size   GAME.elf 
+   text	   data	    bss	    dec	    hex	filename
+  30380	    156	   3932	  34468	   86a4	GAME.elf
+Finished building: default.size.stdout
+ 

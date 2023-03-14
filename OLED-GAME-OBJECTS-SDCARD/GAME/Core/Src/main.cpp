@@ -62,10 +62,6 @@
 //----screen data-------------//
 const int Screen_width=128; //in pixels
 const int Screen_height=64;
-// strings for easter egg
-char Szymon_string[20]="Szymon";
-char Nyderek_string[20]="Nyderek";
-char year_string[20]="2023r";
 //int for map
 int is_map_changed=0;
 int current_map=0;
@@ -93,12 +89,12 @@ void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
 void Jump(Player &player,int &jump_height,int &barrier);
 void Gravitation(Player &player,int ground_level,int &barrier);
-void Check_buttons(Player &player,int barrier);
+void Check_buttons(Player &player,int barrier,int &Jump_height);
 void Game(Player player,int &barrier,int &Jump_height);
 void Display_Over_Screen();
 void change_map(int &cur_map,int &is_map_changed,int &Block_1_A,int &Block_1_B,int &Mob_1_A,int &Mob_1_B,Coin coin);
-void WIN_GAME();
-void easter_egg();
+void WIN_GAME(Player &player,Map castle_map);
+void easter_egg(Player &player);
 void Check_the_border(Player &player,int width);
 /* USER CODE END PFP */
 
@@ -356,6 +352,10 @@ void Check_the_border(Player &player,int width){//function blocking boxi on the 
 //Its easter egg on map 5 on the right bottom corner of the map
 void easter_egg(Player &player){
 	if((player.RHIT>=124)&&(player.pos_y>=40)&&(current_map==3)){
+	  //--------------//
+	  char Szymon_string[20]="Szymon";
+	  char Nyderek_string[20]="Nyderek";
+	  char year_string[20]="2023r";
 	  //--CHANGE POSINTIONS--//
 	  player.Change_position(80,34);
 	  m1.Change_position(80,43);
@@ -379,15 +379,15 @@ void easter_egg(Player &player){
 	}
 }
 /*-------------------WIN FUNCTION-------------------------------------------*/
-void WIN_GAME(){
-	if(boxi.Player_coins>=5){
-	boxi.Change_position(3,54);
+void WIN_GAME(Player &player,Map castle_map){
+	if(player.Player_coins>=5){
+	player.Change_position(3,54);
 	//----go to the castle-----//
 	for(int i=0;i<=45;i++){//display boxi going to the castle
-		boxi.pos_x++;
+		player.pos_x++;
 		ssd1306_Fill(Black);
 		castle_map.Display_map();
-        boxi.Display_Player();
+        player.Display_Player();
         ssd1306_UpdateScreen();
 	}
 	  ssd1306_Fill(Black);
@@ -441,7 +441,7 @@ void WIN_GAME(){
 	}
 
 /*----------------------checking buttons---------------------------------------*/
-	void Check_buttons(Player &player,int barrier){
+	void Check_buttons(Player &player,int barrier ,int &Jump_height){
 		player.generateHIT();//generating actual hit box of player
 
 		if((HAL_GPIO_ReadPin(UP_GPIO_Port, UP_Pin)==0)&&(barrier==true))//jumping
@@ -514,13 +514,13 @@ void WIN_GAME(){
 		  //----------GRAVITATION FUNCTION----------//
 		  Gravitation(boxi, ground_level,barrier);
 		  //--------BUTTONS CHECKING ---------------//
-	      Check_buttons(boxi,barrier);
+	      Check_buttons(boxi,barrier,Jump_height);
 	      //----------JUMPING FUNCTION--------------//
 	      Jump(boxi,Jump_height,barrier);
 	      //-----------CHANGE MAP FUNCTION----------//
 	      change_map(current_map,is_map_changed,Block_1_A,Block_1_B,Mob_1_A,Mob_1_B,c1);
 	      //------------WIN FUNCTION----------------//
-	      WIN_GAME();
+	      WIN_GAME(boxi,castle_map);
 	      //-------------easter egg----------------//
 	      easter_egg(boxi);
 		  //-----------LED TEST--------------//
