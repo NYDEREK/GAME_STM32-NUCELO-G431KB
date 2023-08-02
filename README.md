@@ -1,12 +1,12 @@
-# GAME_STM32-NUCELO-G431KB
+# NUCLEO G431KB BOXI GAME
+![Banner-boxi-game](https://github.com/NYDEREK/GAME_STM32-NUCELO-G431KB/assets/112076828/f6b44766-35ec-425b-b42e-cc429abf3a96)
+<img alt="Static Badge" src="https://img.shields.io/badge/Platform-STM32cubeIDE-darkcyan"> <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/NYDEREK/GAME_STM32-NUCELO-G431KB"> <img alt="Static Badge" src="https://img.shields.io/badge/uC-STM32G431KB-light_blue"> <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/NYDEREK/GAME_STM32-NUCELO-G431KB"> 
 
 (for now not everthing it's done its work in progres)
 
-Hi, this is my OLED screen game on nucleo-g431kb called "boxi game"
-
 ## 🎮GAME🎮
 
-Boxi player must avoid mobs and spikes and collect coins from each map to win. There will be 15 maps and only 3 lives. maps are randomly selected one by one.
+Boxi (player) must avoid mobs and spikes and collect coins from each map to win. There will be 15 maps and only 3 lives. maps are randomly selected one by one.
 
 ## 🐱‍👤CODE🐱‍👤
 
